@@ -18,7 +18,7 @@ const Footer = () => {
                         <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                         <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div className="">
+                        <div className="font" style={{borderRadius: '20px'}}>
                             <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></a>
                             <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
                             <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></a>
@@ -35,7 +35,7 @@ const Footer = () => {
 </div>
 
                     <div className="col-lg-3 col-md-6">
-                        <h5 className="text-white mb-4 d-flex">Photo Gallery</h5>
+                        <h5 className="text-white mb-4 d-flex" style={{marginLeft: '30px'}}>Photo Gallery</h5>
                         <div className="row g-2 pt-2">
                             <div className="col-4">
                                 <img className="img-fluid rounded bg-light p-1" src={img1} alt="" style={{ width: '80%' }} />

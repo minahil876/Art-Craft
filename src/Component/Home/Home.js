@@ -1,20 +1,19 @@
 import React from "react";
 import Footer from "../Footer/Footer";
-import Testimonial from '../Testimonial/Testimonial'
+// import Testimonial from '../Testimonial/Testimonial'
 import "./Home.css";
 import img from "../../Assets/basket18.jpg";
 import img1 from "../../Assets/img7.jpg";
 import img2 from "../../Assets/img10.jpg";
 import img3 from "../../Assets/img6.jpg";
-// import video from '../../Assets/basket21.mp4';
+import Carousel from "../Carousel/Carousel";
+
 function Home() {
   return (
     <div>
       <div className="image">
         <img src={img} alt="" />
         <div className="image-text">
-          {/* 
-        "Welcome to AR Craft Gallery, your haven for exquisite floral arrangements, bespoke Nikkah pens, and captivating gift baskets. Immerse yourself in a world of unparalleled creativity, where every creation tells a unique story. Explore our curated collection and discover the perfect masterpiece for every occasion." */}
           "Step into the enchanting world of AR Craft Gallery, where elegance
           meets craftsmanship. Explore our diverse array of floral bouquets,
           exquisite Nikkah pens, and charming gift baskets, each meticulously
@@ -22,11 +21,7 @@ function Home() {
           artistry and creativity in every creation, exclusively at AR Craft
           Gallery."
         </div>
-        {/* <div className='video'>
-        <video controls autoPlay>
-          <source src={video} type="video/mp4" />
-        </video>
-      </div> */}
+        
       <div className="images">
 
       <div className="im">
@@ -45,7 +40,8 @@ function Home() {
         </div>
       </div>
       </div>
-      <Testimonial />
+      <Carousel />
+      {/* <Testimonial /> */}
       <Footer />
     </div>
   );

@@ -1,8 +1,12 @@
 import React from 'react'
+import Craftgallery from '../Craftgallery/Craftgallery'
 
 function Product() {
   return (
-    <div>Product</div>
+    <div>
+           <Craftgallery />
+
+    </div>
   )
 }
 

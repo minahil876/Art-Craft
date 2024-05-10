@@ -1,15 +1,11 @@
    .Navbar {
     background-color: #333; 
     color: #fff; 
-    /* padding: 10px 20px;  */
     padding: 10px 80px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    /* margin-top: 10px; */
     border-radius: 70px;
-
-    /* width: 100% !important; */
   }
   
   .nav-logo {

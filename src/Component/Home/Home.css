@@ -73,3 +73,9 @@
   margin-top: 40px; 
   line-height: 1.5; 
 }
+
+@media (max-width: 750px){
+  .image-text{
+    margin-top: 300px;
+  }
+}

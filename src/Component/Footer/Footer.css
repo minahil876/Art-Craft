@@ -6,7 +6,6 @@
 .footer-menu {
     color: white; 
 }
-  
   .footer-menu a {
     text-decoration: none; 
     color: white; 
@@ -16,7 +15,6 @@
   .footer-menu a:hover {
     text-decoration: underline;
   }
-  
   .footer-menu a:not(:last-child)::after {
     content: "|"; 
     margin-left: 5px; 
