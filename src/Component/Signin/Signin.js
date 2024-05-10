@@ -17,8 +17,8 @@ const Signin = () => {
         password: ""
     })
 
-    const [] = useState([]);
-    console.log(inpval);
+    // const [] = useState([]);
+    // console.log(inpval);
 
     const getdata = (e) => {
         // console.log(e.target.value);
