@@ -46,7 +46,7 @@ const Craftgallery = () => {
   return (
     <>
       <div className={model ? "model open" : "model"}>
-        <img src={tempimgSrc} />
+        <img src={tempimgSrc} alt="model"/>
         <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)}/>
       </div>
       <div className="gallery">
@@ -57,7 +57,7 @@ const Craftgallery = () => {
               key={index}
               onClick={() => getImg(item.imgSrc)}
             >
-              <img src={item.imgSrc} style={{ width: "100%" }} />
+              <img src={item.imgSrc} style={{ width: "100%" }} alt="pict" />
             </div>
           );
         })}

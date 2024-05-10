@@ -39,11 +39,20 @@ const Contact = () => {
             </div>
           </div>
           <div className ="col-lg-6 col-lg-6 col-sm-12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.9538308951!2d74.00472200405083!3d31.48251795488763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715163360355!5m2!1sen!2s" width="100%" height="550vh"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+  title="Google Map of Lahore, Punjab, Pakistan"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.9538308951!2d74.00472200405083!3d31.48251795488763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715163360355!5m2!1sen!2s"
+  width="100%"
+  height="550vh"
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
           </div>
           <div className="col-lg-6 col-lg-6 col-sm-12">
             <div className="wow fadeInUp" data-wow-delay="0.5s">
-              <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+              <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <span>Download Now</span></p>
               <form>
                 <div className="row g-3">
                   <div className="col-md-6">

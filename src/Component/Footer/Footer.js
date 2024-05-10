@@ -19,19 +19,19 @@ const Footer = () => {
                         <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
                         <div className="font" style={{borderRadius: '20px'}}>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-linkedin-in"></i></a>
+                            <h5 className="btn btn-outline-light btn-social"><i className="fab fa-twitter"></i></h5>
+                            <h5 className="btn btn-outline-light btn-social"><i className="fab fa-facebook-f"></i></h5>
+                            <h5 className="btn btn-outline-light btn-social"><i className="fab fa-youtube"></i></h5>
+                            <h5 className="btn btn-outline-light btn-social"><i className="fab fa-linkedin-in"></i></h5>
                         </div>
                     </div> 
                     <div className="col-lg-3  col-md-6 d-flex justify-content-start flex-column align-items-start">
     <h5 className="text-white mb-4">Quick Links</h5>
-    <li><a className="btn btn-link text-white-50" href="">About Us</a></li>
-    <li><a className="btn btn-link text-white-50" href="">Contact Us</a></li>
-    <li><a className="btn btn-link text-white-50" href="">Our Services</a></li>
-    <li><a className="btn btn-link text-white-50" href="">Privacy Policy</a></li>
-    <li><a className="btn btn-link text-white-50" href="">Terms &amp; Condition</a></li>
+    <li><h5 className="btn btn-link text-white-50">About Us</h5></li>
+    <li><h5 className="btn btn-link text-white-50">Contact Us</h5></li>
+    <li><h5 className="btn btn-link text-white-50">Our Services</h5></li>
+    <li><h5 className="btn btn-link text-white-50">Privacy Policy</h5></li>
+    <li><h5 className="btn btn-link text-white-50">Terms &amp; Condition</h5></li>
 </div>
 
                     <div className="col-lg-3 col-md-6">
@@ -72,18 +72,18 @@ const Footer = () => {
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            © <a className="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+                            © <h5 className="border-bottom">Your Site Name</h5>, All Right Reserved. 
 							
-							Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							Designed By <h5 className="border-bottom" >HTML Codex</h5>
                             <br />
-                            Distributed By <a className="border-bottom" href="https://themewagon.com" target="_blank" rel="noreferrer">ThemeWagon</a>
+                            Distributed By <h5 className="border-bottom" target="_blank" rel="noreferrer">ThemeWagon</h5>
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
-                                <a href="">Home </a>
-                                <a href="">Cookies </a>
-                                <a href="">Help </a>
-                                <a href="">FQAs </a>
+                                <h5>Home </h5>
+                                <h5>Cookies </h5>
+                                <h5>Help </h5>
+                                <h5>FQAs </h5>
                             </div>
                         </div>
                     </div>
