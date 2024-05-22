@@ -80,7 +80,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button className="btn w-100 py-3" type="submit" style={{background: "purple"}}>Send Message</button>
+                    <button className="btn w-100 py-3" type="submit" style={{background: "purple", color: 'white', fontSize: '20px'}}>Send Message</button>
                   </div>
                 </div>
               </form>

@@ -10,7 +10,9 @@ const Testimonial = () => {
   return (
     <>
       <div className="container testimonial" style={{ marginTop: "50px" }}>
-        <h2 className="text-center mt-5 mb-5">Our Client Review</h2>
+        <h1 className="text-center mt-5 mb-5" style={{ fontFamily: "Poetsen One", color: "purple", fontSize: '35px'}}>
+        <span>Our Client Review</span>
+        </h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={50}
