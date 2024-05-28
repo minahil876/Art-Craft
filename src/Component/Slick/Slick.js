@@ -120,9 +120,9 @@ const Slick = () => {
                   <div className="post-inner">
                     <ul className="post-category">
                       <li>
-                        <a href="#" className="category creative" style={{color: 'purple', textDecoration: 'none'}}>
+                        <div className="category creative" style={{color: 'purple', textDecoration: 'none'}}>
                           {post.category}
-                        </a>
+                        </div>
                       </li>
                     </ul>
                       <p className="w-100" style={{fontSize: '20px'}}>{post.description}</p>
@@ -132,7 +132,7 @@ const Slick = () => {
                     <ul className="meta">
                       <li>
                         <i className="fa fa-user-circle"></i>
-                        <a href="#">{post.author}</a>
+                        <div>{post.author}</div>
                       </li>
                       <li>
                         <i className="fa fa-clock-o"></i>
