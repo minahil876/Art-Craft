@@ -15,6 +15,7 @@ import basket9 from '../../Assets/nikkah3.jpg';
 import basket10 from '../../Assets/nikkah7.jpg';
 import basket11 from '../../Assets/basket34.jpg';
 import basket12 from '../../Assets/basket32.jpg';
+import NavbarComponent from '../Navbar/Navbar';
 
 // Data
 const GalleryData = [
@@ -80,7 +81,9 @@ const Filter = () => {
   };
 
   return (
-    <div className="App">
+    <>
+    <NavbarComponent/>
+<div className="App">
       <div className="galleryWrapper">
         <div className="filterItem">
           <ul>
@@ -102,6 +105,8 @@ const Filter = () => {
       </div>
       <DetailModal show={!!selectedItem} item={selectedItem} onClose={closeModal} />
     </div>
+    </>
+    
   );
 };
 

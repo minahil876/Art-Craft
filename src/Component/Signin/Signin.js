@@ -1,109 +1,91 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-// import Signup from "./Signup.js";
 import Button from "react-bootstrap/Button";
 import me from "../../Assets/login2.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NavbarComponent from "../Navbar/Navbar";
+import axios from "axios";
 
 const Signin = () => {
   const history = useNavigate();
 
   const [inpval, setInpval] = useState({
-    email: "",
+    username: "",
     password: "",
   });
 
-  // const [] = useState([]);
-  // console.log(inpval);
-
   const getdata = (e) => {
-    // console.log(e.target.value);
-
     const { value, name } = e.target;
-    // console.log(value,name);
-
-    setInpval(() => {
-      return {
-        ...inpval,
-        [name]: value,
-      };
-    });
+    setInpval((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
+
   const addData = (e) => {
     e.preventDefault();
 
-    const getuserArr = localStorage.getItem("useryoutube");
-    console.log(getuserArr);
-
-    const { email, password } = inpval;
-    if (email === "") {
-      toast.error("email field is requred", {
-        position: "top-center",
-      });
-    } else if (!email.includes("@")) {
-      toast.error("plz enter valid email addres", {
+    const { username, password } = inpval;
+    if (username === "") {
+      toast.error("Username field is required", {
         position: "top-center",
       });
     } else if (password === "") {
-      toast.error("password field is requred", {
+      toast.error("Password field is required", {
         position: "top-center",
       });
-    } else if (password.length < 5) {
-      toast.error("password length greater five", {
+    } else if (password.length <= 5) {
+      toast.error("Password length should be greater than five", {
         position: "top-center",
       });
     } else {
-      if (getuserArr && getuserArr.length) {
-        const userdata = JSON.parse(getuserArr);
-        const userlogin = userdata.filter((el, k) => {
-          return el.email === email && el.password === password;
+      axios.post('http://192.168.12.107:8000/crafters/login/', inpval)
+        .then((res) => {
+          console.log(res.data);
+          if (res.data.success) { // Adjust the condition according to your backend response
+            toast.success("User login successful", {
+              position: 'top-center'
+            });
+            localStorage.setItem("user_login", JSON.stringify(res.data.user));
+            history("/details");
+          } else {
+            toast.error("Invalid username or password", {
+              position: "top-center",
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+          toast.error("An error occurred. Please try again.", {
+            position: "top-center",
+          });
         });
-
-        if (userlogin.length === 0) {
-          alert("invalid details");
-        } else {
-          console.log("user login succesfulyy");
-
-          localStorage.setItem("user_login", JSON.stringify(userlogin));
-
-          history("/details");
-        }
-      }
     }
   };
 
   return (
     <>
+      <NavbarComponent />
       <div className="container mt-3">
         <section className="d-flex justify-content-between">
           <div className="left_data mt-3 p-3" style={{ width: "70%" }}>
-            <h1
-              className="text-center col-lg-6"
-              style={{ marginTop: "70px", color: "purple" }}
-            >
+            <h1 className="text-center col-lg-6" style={{ marginTop: "70px", color: "purple" }}>
               <span>Sign IN</span>
             </h1>
             <Form>
-              <Form.Group
-                className="mb-3 col-lg-6"
-                controlId="formBasicEmail"
-                style={{ marginTop: "40px" }}
-              >
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicEmail" style={{ marginTop: "40px" }}>
                 <Form.Control
-                  type="email"
-                  name="email"
+                  type="text"
+                  name="username"
                   onChange={getdata}
-                  placeholder="Enter email"
+                  placeholder="Enter username"
                   style={{ width: "120%", height: "8vh", borderRadius: "15px" }}
                 />
               </Form.Group>
 
-              <Form.Group
-                className="mb-3 col-lg-6"
-                controlId="formBasicPassword"
-              >
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
                 <Form.Control
                   type="password"
                   name="password"
@@ -121,7 +103,7 @@ const Signin = () => {
                 className="col-lg-6"
                 onClick={addData}
                 style={{
-                  background: "rgb(purple)",
+                  background: "purple",
                   marginRight: "50%",
                   marginTop: "20px",
                   height: "8vh",
@@ -136,8 +118,8 @@ const Signin = () => {
             </Form>
             <p className="mt-4">
               Already Have an Account?{" "}
-              <NavLink to="/Signup" style={{color: 'purple'}}>Signup</NavLink>            
-</p>
+              <NavLink to="/Signup" style={{ color: 'purple' }}>Signup</NavLink>
+            </p>
           </div>
           <div>
             <img
@@ -146,7 +128,6 @@ const Signin = () => {
               style={{ marginLeft: "10px", height: "80vh", width: "100%" }}
             />
           </div>
-          
         </section>
         <ToastContainer />
       </div>

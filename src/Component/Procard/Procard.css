@@ -1,0 +1,37 @@
+.box4 {
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 50px 0;
+}
+
+.box4 img {
+    height: 60vh;
+    width: 100%;
+    transition: all 1.5s ease 0s;
+}
+.box4:hover img {
+    transform: scale(1.2);
+}
+
+.box4-content {
+    position: absolute;
+    bottom: 0; /* Position the content at the bottom */
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Add some padding for better appearance */
+    text-align: center; /* Center the text */
+    background: purple; /* Optional: Adds a dark overlay behind the text */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box4:hover .box4-content {
+    opacity: 70%;
+}
+
+.box4-content h2 {
+    color: #fff;
+    margin: 0; /* Remove default margin */
+    cursor: pointer;
+}

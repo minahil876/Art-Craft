@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -7,6 +9,9 @@
 }
 .carousel-section .carousel {
   width: 100%;
+}
+.text-section p{
+  font-size: 22px;
 }
 .carousel-section img {
   border-radius: 10px;
@@ -22,7 +27,8 @@
 }
 
 .text-section {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: inset 2px 2px 3px 3px grey;
   border-radius: 10px;
   height: 600px;
 }

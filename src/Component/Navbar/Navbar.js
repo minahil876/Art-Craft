@@ -13,6 +13,7 @@ const NavbarComponent = () => {
       <Navbar.Toggle onClick={() => setExpanded(!expanded)} aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto" style={{fontSize:'1.3rem'}}> {/* Changed from "me-auto" to "ms-auto" to align to right */}
+        {/* <Nav.Link as={NavLink} to="/admin" activeClassName="active" className="nav-link">Admin</Nav.Link> */}
           <Nav.Link as={NavLink} to="/" activeClassName="active" className="nav-link me-4">Home</Nav.Link> 
           <Nav.Link as={NavLink} to="/about" activeClassName="active" className="nav-link me-4">About Us</Nav.Link> 
           <Nav.Link as={NavLink} to="/product" activeClassName="active" className="nav-link me-4">Product</Nav.Link> 
@@ -21,6 +22,7 @@ const NavbarComponent = () => {
           <Nav.Link as={NavLink} to="/contact" activeClassName="active" className="nav-link me-4">Contact Us</Nav.Link>     
           <Nav.Link as={NavLink} to="/signin" activeClassName="active" className="nav-link">Sign In</Nav.Link> 
           <Nav.Link as={NavLink} to="/signup" activeClassName="active" className="nav-link">Sign Up</Nav.Link> 
+           
        
         </Nav>
       </Navbar.Collapse>
@@ -32,3 +34,5 @@ const NavbarComponent = () => {
 }
 
 export default NavbarComponent;
+
+

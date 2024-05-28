@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NavbarComponent from "../Navbar/Navbar";
 import "./Slick.css";
 
 import basket1 from "../../Assets/basket29.jpg";
@@ -87,6 +88,8 @@ const Slick = () => {
   };
 
   return (
+<>
+<NavbarComponent/>
     <div className="post-slider-container">
       <Slider {...settings}>
         {posts.map((post, index) => (
@@ -145,6 +148,7 @@ const Slick = () => {
         ))}
       </Slider>
     </div>
+    </>
   );
 };
 

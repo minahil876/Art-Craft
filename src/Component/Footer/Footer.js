@@ -6,6 +6,7 @@ import img3 from "../../Assets/img8.jpg";
 import img4 from "../../Assets/img9.jpg";
 import img5 from "../../Assets/img10.jpg";
 import img6 from "../../Assets/img5.jpg";
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -27,11 +28,11 @@ const Footer = () => {
 </div> 
                     <div className="col-lg-3  col-md-6 d-flex justify-content-start flex-column align-items-start">
     <h5 className="text-white mb-4">Quick Links</h5>
-    <li><h5 className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>About Us</h5></li>
-    <li><h5 className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>Contact Us</h5></li>
-    <li><h5 className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>Our Services</h5></li>
-    <li><h5 className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>Privacy Policy</h5></li>
-    <li><h5 className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>Terms &amp; Condition</h5></li>
+    <li><NavLink to="/about" className="btn btn-link text-white-50" style={{ textDecoration: 'none' }}>About Us</NavLink></li>
+    <li><NavLink to="/gallery" className="btn btn-link text-white-50" style={{ textDecoration: 'none' }}>Gallery</NavLink></li>
+    <li><NavLink to="/contact" className="btn btn-link text-white-50" style={{ textDecoration: 'none' }}>Contact</NavLink></li>
+    <li><NavLink to="/privacy" className="btn btn-link text-white-50" style={{ textDecoration: 'none' }}>Privacy Policy</NavLink></li>
+    <li><NavLink to="/terms" className="btn btn-link text-white-50" style={{textDecoration: 'none'}}>Terms &amp; Condition</NavLink></li>
 </div>
 
                     <div className="col-lg-3 col-md-6">

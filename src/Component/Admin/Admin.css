@@ -1,0 +1,83 @@
+
+.admin-container3 {
+  max-width: 1550px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-sidebar3 a, .logout-button {
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.admin-sidebar3 a:hover, .logout-button:hover {
+  background-color: #495057;
+}
+
+.admin-sidebar3 a svg, .logout-button svg {
+  margin-right: 10px; 
+}
+
+.admin-sidebar3{
+  background-color: #343a40;
+  padding: 20px;
+  color: #fff;
+  height: 100%;
+  min-height: 400px;
+}
+
+.admin-sidebar3 div {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.admin-sidebar3 a {
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.admin-sidebar3 a:hover {
+  background-color: #495057;
+}
+
+.admin-content3 {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  min-height: 500px;
+}
+
+.row3 {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 87vh;
+}
+
+.side{
+  width: 25%;
+  background-color: #343a40;
+}
+
+.col-lg-8 {
+  width: 75%;
+}

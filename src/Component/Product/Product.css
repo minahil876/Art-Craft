@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.right img{
+width: 90%;
+height: 75vh;
+border-radius: 100px 5px;
+}

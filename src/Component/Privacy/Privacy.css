@@ -1,0 +1,47 @@
+/* Privacy.css */
+
+.privacy-policy-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  }
+  
+  .privacy-policy-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center; /* Center aligning h1 */
+  }
+  
+  .privacy-policy-container h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left; /* Aligning h2 to the left */
+  }
+  
+  .privacy-policy-container p,
+  .privacy-policy-container ul {
+    margin-bottom: 15px;
+  }
+  
+  .privacy-policy-container ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .privacy-policy-container li {
+    margin-bottom: 5px;
+  }
+  
+  .privacy-policy-container a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .privacy-policy-container a:hover {
+    text-decoration: none;
+  }
+  

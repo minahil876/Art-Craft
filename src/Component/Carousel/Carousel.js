@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="text-section">
-        <h1 style={{marginTop: '80px'}}><span>Discover</span> Elegance <span>and</span> Craftsmanship</h1>
+        <h1 style={{marginTop: '80px', color: 'purple', fontSize: '34px'}}><span>Discover</span> Elegance <span>And</span> Craftsmanship</h1>
         <p>
           "Step into the enchanting world of AR Craft Gallery, where elegance
           meets craftsmanship. Explore our diverse array of floral bouquets,

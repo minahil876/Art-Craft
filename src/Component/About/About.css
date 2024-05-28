@@ -113,7 +113,6 @@ span {
   flex: 1;
   padding-right: 30px; 
 }
-
 .right1 {
   flex: 1;
 }
@@ -188,7 +187,7 @@ overflow: hidden;
 }
 
 /* Styles for box items */
-.row {
+.row4{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -9,6 +9,7 @@ import Img3 from "../../Assets/img8.jpg";
 import Img4 from "../../Assets/basket30.jpg";
 import Img5 from "../../Assets/basket29.jpg";
 import Img6 from "../../Assets/img8.jpg";
+import NavbarComponent from "../Navbar/Navbar";
 
 
 const Craftgallery = () => {
@@ -46,7 +47,10 @@ const Craftgallery = () => {
   };
   return (
     <>
-      <div className={model ? "model open" : "model"}>
+      {/* <NavbarComponent/> */}
+    <div>
+
+    <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} alt="model"/>
         <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)}/>
       </div>
@@ -64,6 +68,8 @@ const Craftgallery = () => {
         })}
       </div>
       <Footer />
+    </div>
+   
     </>
   );
 };

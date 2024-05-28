@@ -6,14 +6,17 @@ import me from '../../Assets/login.png';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarComponent from '../Navbar/Navbar';
+import axios from 'axios';
+
 
 const Signup = () => {
   const history = useNavigate();
 
   const [inpval, setInpval] = useState({
-    name: '',
+    username: '',
     email: '',
-    date: '',
+    // date: '',
     password: '',
   });
 
@@ -28,11 +31,18 @@ const Signup = () => {
     }));
   };
   const addData = (e) => {
+
     e.preventDefault();
+axios.post(' http://192.168.12.107:8000/crafters/register/',inpval).then((res)=>{
+  console.log(res.data)
+}).catch((err)=>{
+  console.log(err)
+});
+    
 
-    const { name, email, date, password } = inpval;
+    const { username, email, password } = inpval;
 
-    if (name === '') {
+    if (username === '') {
       toast.error(' name field is required!', {
         position: 'top-center',
       });
@@ -44,15 +54,12 @@ const Signup = () => {
       toast.error('plz enter valid email address', {
         position: 'top-center',
       });
-    } else if (date === '') {
-      toast.error('date field is required', {
-        position: 'top-center',
-      });
-    } else if (password === '') {
+    } 
+     else if (password === '') {
       toast.error('password field is required', {
         position: 'top-center',
       });
-    } else if (password.length < 5) {
+    } else if (password.length < 4) {
       toast.error('password length greater five', {
         position: 'top-center',
       });
@@ -62,25 +69,28 @@ const Signup = () => {
       localStorage.setItem('useryoutube', JSON.stringify([...data, inpval]));
     }
   };
+  const handelsubmit=(e)=>{
+e.preventDefault();
+console.log("it is clciked")
+  }
   return (
     <>
+    <NavbarComponent/>
       <div className="container mt-3">
         <section className="d-flex justify-content-between">
           <div className="left_data mt-3 p-3" style={{ width: "70%"}}>
             <h3 className="text-center" style={{marginTop: '30px', marginRight: '80px'}}>Sign Up</h3>
-            <Form>
+            <Form onSubmit={handelsubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" name="name" onChange={getdata} placeholder="Enter Your Name" style={{ width: "80%", height: "8vh", borderRadius: "15px", marginTop: '35px' }}/>
+                <Form.Control type="text" name="username" onChange={getdata} placeholder="Enter Your Name" style={{ width: "80%", height: "8vh", borderRadius: "15px", marginTop: '35px' }}/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="email" name="email" onChange={getdata} placeholder="Enter email" style={{ width: "80%", height: "8vh", borderRadius: "15px" }}/>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control onChange={getdata} name="date" type="date" style={{ width: "80%", height: "8vh", borderRadius: "15px" }}/>
-              </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" style={{ width: "80%", height: "8vh", borderRadius: "15px" }}/>
               </Form.Group>
+             
               <Button className="btn-submit" onClick={addData} type="submit"  style={{
                   background: "rgb(purple)",
                   marginRight: "78%",

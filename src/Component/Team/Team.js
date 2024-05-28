@@ -11,7 +11,7 @@ class Team extends React.Component {
     return (
       <div className="container">
         <div className="row text-center">
-          <h1  style={{ fontFamily: "Poetsen One", color: "purple", fontSize: '35px',marginTop: "30px", marginBottom: '20px' }}>
+          <h1  style={{color: "purple", fontSize: '35px',marginTop: "30px", marginBottom: '20px' }}>
           <span>Meet</span> Our <span>Team</span> Members
           </h1>
         </div>
