@@ -95,7 +95,7 @@
   }
   .thumb {
     position: relative;
-    background: linear-gradient(to bottom, rgba(182, 84, 182, 0.8) 0%, rgba(182, 84, 182, 0.6) 100%), url();
+    background: linear-gradient(to bottom, rgba(182, 84, 182, 0.8) 0%, rgba(182, 84, 182, 0.6) 100%);
     background-size: cover;
     background-position: center;
     overflow: hidden;
