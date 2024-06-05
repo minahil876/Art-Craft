@@ -40,7 +40,7 @@ axios.get('http://192.168.12.108:8000/crafters/products/').then((res)=>{
       <td >{item.name}</td>
       <td >{item.color}</td>
       <td >{item.size}</td>
-    <td><img src={item.product_picture} width="50"></img></td>
+    <td><img src={item.product_picture} width="50" alt='hello'></img></td>
       <td >{item.price}</td>
     <td><button className='btn btn-danger' onClick={()=>del(item.id)}>Delete</button></td>
     </tr>

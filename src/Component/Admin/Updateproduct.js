@@ -39,7 +39,7 @@ navigate('editproduct');
     <td >{item.name}</td>
     <td >{item.color}</td>
     <td >{item.size}</td>
-  <td><img src={item.product_picture} width="50"></img></td>
+  <td><img src={item.product_picture} width="50" alt='hi'></img></td>
     <td >{item.price}</td>
   <td><button className='btn btn-danger' onClick={()=>upd(item)}>Update</button></td>
   </tr>

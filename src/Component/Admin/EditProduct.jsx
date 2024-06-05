@@ -106,11 +106,11 @@ function EditProduct() {
         color: '#fff',
       };
     
-      const cancelButtonStyle = {
-        ...buttonStyle,
-        backgroundColor: '#dc3545',
-        color: '#fff',
-      };
+      // const cancelButtonStyle = {
+      //   ...buttonStyle,
+      //   backgroundColor: '#dc3545',
+      //   color: '#fff',
+      // };
     
   return (
 <div style={formStyle}>
