@@ -1,221 +1,252 @@
+/* Existing CSS imports and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* General styles for the post slider */
 .post-slider-container {
-    max-width: 1200px !important;
-    /* border: 2px solid red; */
-    margin: 0 auto;
-    padding: 20px;
-    /* height: 100vh; */
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .section-title-txt {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .htmega-title-sperator-sec {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .htmega-title-sperator {
-    display: inline-block;
-    width: 50px;
-    height: 2px;
-    background-color: #000;
-  }
-  
-  .section-subtitle-txt {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  .htmaga-section-title-image-position-center img {
-    margin-bottom: 30px;
-  }
-  
-  .slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  .slick-list {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .slick-track {
-    display: flex;
-  }
-  
-  .slick-slide {
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-  }
-  
-  .slick-slide img {
-    display: block;
-  }
-  
-  .slick-initialized .slick-slide {
-    display: flex;
-  }
-  
-  .slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    background: none;
-    outline: none;
-    z-index: 2;
-  }
-  
-  .slick-prev:hover, .slick-next:hover,
-  .slick-prev:focus, .slick-next:focus {
-    color: white;
-    outline: none;
-    background: none;
-  }
-  .thumb {
-    position: relative;
-    background: linear-gradient(to bottom, rgba(182, 84, 182, 0.8) 0%, rgba(182, 84, 182, 0.6) 100%);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-  }
-  .slick-prev.slick-disabled, .slick-next.slick-disabled {
-    opacity: 0.25;
-    pointer-events: none;
-  }
-  
-  .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 40px;
-    line-height: 1;
-    opacity: 0.75;
-    color: black;
-  }
-  
-  .slick-prev {
-    left: -20px;
-  }
-  
-  .slick-next {
-    right: -3px;
-  }
-  
-  .htmega-single-post-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-title-txt {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.htmega-title-sperator-sec {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.htmega-title-sperator {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+
+.section-subtitle-txt {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.htmaga-section-title-image-position-center img {
+  margin-bottom: 30px;
+}
+
+/* Slick slider styles */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  background: none;
+  outline: none;
+  z-index: 2;
+}
+
+.slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus {
+  color: white;
+  outline: none;
+  background: none;
+}
+
+.slick-prev.slick-disabled, .slick-next.slick-disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 40px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #016A70;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -3px;
+}
+
+/* Post slider item styles */
+.htmega-single-post-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.htmega-post-slider-st-6 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.htmega-post-slider-left {
+  width: 50%;
+}
+
+.htmega-post-slider-right {
+  width: 50%;
+}
+
+.htmega-post-slider-left .thumb {
+  margin-right: 20px;
+}
+
+.htmega-post-slider-left .thumb img {
+  width: 100%;
+  height: 80vh;
+  border-radius: 8px;
+}
+
+.htmega-post-slider-right .content {
+  text-align: left;
+}
+
+.post-category {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.post-category li {
+  display: inline;
+  margin-right: 10px;
+}
+/* 
+.post-category .category {
+  color: #007bff;
+  text-decoration: none;
+} */
+
+.post-category .category:hover {
+  text-decoration: underline;
+}
+
+.htmega-post-slider-right h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  /* color: #016A70; */
+  font-size: 20px;
+  font-family: "Noto Serif Display", serif;
+}
+
+.meta li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.meta li i {
+  margin-right: 5px;
+}
+
+.htmega-post-slider-right p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
   .htmega-post-slider-st-6 {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Adjust height to auto */
   }
-  .htmega-post-slider-left {
-width: 50% !important;
-  }
-  .htmega-post-slider-right{
-    width: 50% !important;
-    font-size: 40px;
-  }
-  .htmega-post-slider-left .thumb {
-    /* flex: 1; */
-    margin-right: 20px;
-  }
-  
+
   .htmega-post-slider-left .thumb img {
+    height: 60vh; /* Set a specific height for images on small screens */
+    object-fit: cover;
+    width: 105%; /* Ensure the image fits within the container */
+  }
+
+  .htmega-post-slider-left {
+    order: 2;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    /* margin-bottom: 20px; */
   }
-  
+
+  .htmega-post-slider-right {
+    order: 1;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-bottom: 2rem;
+  }
+
   .htmega-post-slider-right .content {
-    /* flex: 2; */
-    text-align: left;
+    text-align: center;
   }
-  
-  .post-category {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px;
-  }
-  
-  .post-category li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .post-category .category {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .post-category .category:hover {
-    text-decoration: underline;
-  }
-  
+
   .htmega-post-slider-right h2 {
-    font-size: 20px;
-    margin: 0 0 10px;
+    font-size: 18px;
   }
-  
-  .meta {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px;
-    color: #888;
-    font-size: 14px;
-  }
-  
-  .meta li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .meta li i {
-    margin-right: 5px;
-  }
-  
+
   .htmega-post-slider-right p {
     font-size: 14px;
-    color: #666;
-    margin: 0 0 15px;
+    overflow: visible; /* Ensure the text is visible */
   }
-  
-  .post-btn .readmore-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  
-  .post-btn .readmore-btn:hover {
-    background-color: #0056b3;
-  }
-  
+}

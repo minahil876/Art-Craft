@@ -6,38 +6,38 @@ const Contact = () => {
     <>
     <NavbarComponent/>
     <div className="container-xxl d-flex py-5">
-      <div className="container">
+      <div className="container" style={{height: '75vh'}}>
         <div className="row g-4">
           <div className="col-12">
             <div className="row gy-4">
               <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                 <div className="bg-light rounded p-3">
                   <div className="d-flex align-items-center bg-white rounded p-3" style={{ border: '1px dashed rgba(0, 185, 142, .3)' }}>
-                    <div className="icon me-3" style={{ width: '45px', height: '45px' }}>
-                      <i className="fa fa-envelope-open text-primary"></i>
+                    <div className="icon me-3" style={{ width: '45px', height: '40px' }}>
+                    <i className="fa fa-map-marker-alt" style={{color:'#016A70'}}></i>
                     </div>
-                    <span>info@example.com</span>
+                    <span>123 Street, Lahore, Pakistan</span>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                 <div className="bg-light rounded p-3">
                   <div className="d-flex align-items-center bg-white rounded p-3" style={{ border: '1px dashed rgba(0, 185, 142, .3)' }}>
-                    <div className="icon me-3" style={{ width: '45px', height: '45px' }}>
-                      <i className="fa fa-phone-alt text-primary"></i>
-                    </div>
-                    <span>+012 345 67890</span>
-                  </div>
+                    <div className="icon me-3" style={{ width: '45px', height: '40px' }}>
+                    <i className="fa fa-envelope-open" style={{color:'#016A70'}}></i>
+                        </div>
+                        <span>info@example.com</span>
+                      </div>
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                 <div className="bg-light rounded p-3">
                   <div className="d-flex align-items-center bg-white rounded p-3" style={{ border: '1px dashed rgba(0, 185, 142, .3)' }}>
-                    <div className="icon me-3" style={{ width: '45px', height: '45px' }}>
-                      <i className="fa fa-phone-alt text-primary"></i>
-                    </div>
-                    <span>03226092892</span>
-                  </div>
+                    <div className="icon me-3" style={{ width: '45px', height: '40px' }}>
+                    <i className="fa fa-phone-alt" style={{color:'#016A70'}}></i>
+                        </div>
+                        <span>+012 345 67769</span>
+                      </div>
                 </div>
               </div>
             </div>
@@ -76,8 +76,8 @@ const Contact = () => {
                   </div>
                   <div className="col-12">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="subject" placeholder="Subject" />
-                      <label htmlFor="subject">Subject</label>
+                      <input type="text" className="form-control" id="address" placeholder="Address" />
+                      <label htmlFor="subject">Address</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -87,7 +87,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button className="btn w-100 py-3" type="submit" style={{background: "purple", color: 'white', fontSize: '20px'}}>Send Message</button>
+                    <button className="btn w-100 py-3" type="submit" style={{background: "#016A70", color: 'white', fontSize: '20px'}}>Send Message</button>
                   </div>
                 </div>
               </form>

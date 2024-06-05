@@ -1,17 +1,18 @@
+import React,{useState} from 'react'
 import axios from 'axios';
-import React, { useState } from 'react';
 
-const AddProduct = () => {
-  const token = sessionStorage.getItem('atoken');
+function EditProduct() {
+    const pdata  = JSON.parse(sessionStorage.getItem('uproduct'));
 
-  console.log('Token:', token); // Logging token to verify retrieval
+  console.log('Token:', pdata); 
+  const id=pdata.id;// Logging token to verify retrieval
 
   const [product, setProduct] = useState({
-    name: '',
-    price: '',
-    product_picture: [], // Initialize as an array
-    size: '',
-    color: '',
+    name: pdata.name,
+    price: pdata.price,
+    // product_picture: [], // Initialize as an array
+    size: pdata.size,
+    color: pdata.color,
   });
 
   const handleChange = (e) => {
@@ -19,26 +20,26 @@ const AddProduct = () => {
     setProduct({ ...product, [name]: value });
   };
 
-  const handleImageUpload = (e) => {
-    setProduct({ ...product, product_picture: [...product.product_picture, ...Array.from(e.target.files)] });
-  };
+//   const handleImageUpload = (e) => {
+//     setProduct({ ...product, product_picture: [...product.product_picture, ...Array.from(e.target.files)] });
+//   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append('name', product.name);
-    formData.append('price', product.price);
-    product.product_picture.forEach((image) => {
-      formData.append('product_picture', image);
-    });
-    formData.append('size', product.size);
-    formData.append('color', product.color);
+    // const formData = new FormData();
+    // formData.append('name', product.name);
+    // formData.append('price', product.price);
+    // product.product_picture.forEach((image) => {
+    //   formData.append('product_picture', image);
+    // });
+    // formData.append('size', product.size);
+    // formData.append('color', product.color);
 
     try {
-      const response = await axios.post(
-        'http://192.168.12.108:8000/crafters/products/',
-        formData,
+      const response = await axios.patch(
+        `http://192.168.12.108:8000/crafters/products/${id}/`,
+        product,
         // {
         //   headers: {
         //     'Authorization': `Token ${token}`,
@@ -46,6 +47,8 @@ const AddProduct = () => {
         // }
       );
       console.log('Product submitted:', response.data);
+      alert("Product Updated Successfully")
+      window.location.reload();
     } catch (error) {
       if (error.response) {
         // The request was made and the server responded with a status code
@@ -62,56 +65,56 @@ const AddProduct = () => {
       console.error('Error config:', error.config);
     }
   };
-
-  const formStyle = {
-    maxWidth: '1000px',
-    margin: '0 auto',
-    padding: '20px',
-    border: '1px solid #ddd',
-    borderRadius: '4px',
-    backgroundColor: '#f9f9f9',
-  };
-
-  const formGroupStyle = {
-    marginBottom: '15px',
-  };
-
-  const labelStyle = {
-    display: 'block',
-    marginBottom: '5px',
-    fontWeight: 'bold',
-  };
-
-  const inputStyle = {
-    width: '100%',
-    padding: '8px',
-    boxSizing: 'border-box',
-    borderRadius: '4px',
-    border: '1px solid #ccc',
-  };
-
-  const buttonStyle = {
-    padding: '10px 15px',
-    margin: '5px',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-  };
-
-  const submitButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: '#28a745',
-    color: '#fff',
-  };
-
-  const cancelButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: '#dc3545',
-    color: '#fff',
-  };
-
+    const formStyle = {
+        maxWidth: '1000px',
+        margin: '0 auto',
+        padding: '20px',
+        border: '1px solid #ddd',
+        borderRadius: '4px',
+        backgroundColor: '#f9f9f9',
+      };
+    
+      const formGroupStyle = {
+        marginBottom: '15px',
+      };
+    
+      const labelStyle = {
+        display: 'block',
+        marginBottom: '5px',
+        fontWeight: 'bold',
+      };
+    
+      const inputStyle = {
+        width: '100%',
+        padding: '8px',
+        boxSizing: 'border-box',
+        borderRadius: '4px',
+        border: '1px solid #ccc',
+      };
+    
+      const buttonStyle = {
+        padding: '10px 15px',
+        margin: '5px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+      };
+    
+      const submitButtonStyle = {
+        ...buttonStyle,
+        backgroundColor: '#28a745',
+        color: '#fff',
+      };
+    
+      const cancelButtonStyle = {
+        ...buttonStyle,
+        backgroundColor: '#dc3545',
+        color: '#fff',
+      };
+    
   return (
-    <div style={formStyle}>
+<div style={formStyle}>
+<h2>Update product</h2>
       <form onSubmit={handleSubmit} encType='multipart/form-data'>
         <div style={formGroupStyle}>
           <label style={labelStyle}>Product Name:</label>
@@ -136,10 +139,10 @@ const AddProduct = () => {
             style={inputStyle}
           />
         </div>
-        <div style={formGroupStyle}>
+        {/* <div style={formGroupStyle}>
           <label style={labelStyle}>Product Images:</label>
           <input type="file" multiple onChange={handleImageUpload} style={inputStyle} />
-        </div>
+        </div> */}
         <div style={formGroupStyle}>
           <label style={labelStyle}>Size:</label>
           <input
@@ -163,24 +166,12 @@ const AddProduct = () => {
           />
         </div>
         <div style={formGroupStyle}>
-          <button type="submit" style={submitButtonStyle}>Save</button>
-          <button
-            type="button"
-            onClick={() => setProduct({
-              name: '',
-              price: '',
-              product_picture: [], // Reset product_picture to an empty array
-              size: '',
-              color: '',
-            })}
-            style={cancelButtonStyle}
-          >
-            Cancel
-          </button>
+          <button type="submit" style={submitButtonStyle}>Update</button>
+          
         </div>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default AddProduct;
+export default EditProduct

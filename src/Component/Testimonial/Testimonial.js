@@ -4,14 +4,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import im1 from "../../Assets/craft.png";
+import im1 from "../../Assets/testi.jpg";
+import im2 from "../../Assets/testi1.jpg";
+import im3 from "../../Assets/testi2.jpg";
+import im4   from "../../Assets/testi3.webp";
 
 const Testimonial = () => {
   return (
     <>
       <div className="container testimonial" style={{ marginTop: "50px" }}>
-        <h1 className="text-center mt-5 mb-5" style={{color: "purple", fontSize: '35px'}}>
-        <span>Our Client Review</span>
+        <h1 className="text-center mt-5 mb-5" style={{fontSize: '35px'}}>
+        <span style={{color: '#016A70'}}>Our</span> <span style={{color: '#D2DE32'}}>Client </span> <span style={{color: '#016A70'}}>Review</span>
         </h1>
         <Swiper
           slidesPerView={1}
@@ -50,7 +53,7 @@ const Testimonial = () => {
 
           <SwiperSlide>
             <div className="imge">
-              <img src={im1} className="" alt="" />
+              <img src={im2} className="" alt="" />
             </div>
             <div className="boxtestimonial">
               <p>
@@ -64,7 +67,7 @@ const Testimonial = () => {
 
           <SwiperSlide>
             <div className="imge">
-              <img src={im1} className="" alt="" />
+              <img src={im3} className="" alt="" />
             </div>
             <div className="boxtestimonial">
               <p>
@@ -78,7 +81,7 @@ const Testimonial = () => {
 
           <SwiperSlide>
             <div className="imge">
-              <img src={im1} className="" alt="" />
+              <img src={im4} className="" alt="" />
             </div>
             <div className="boxtestimonial">
               <p>

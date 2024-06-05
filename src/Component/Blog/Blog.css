@@ -2,6 +2,8 @@ h1{ padding: 0 0 30px; }
 h2{
     font-size: 22px;
     margin-top: 25px;
+    color: white;
+    font-family: "Noto Serif Display", serif;
 }
 .box{
     overflow: hidden;
@@ -20,7 +22,7 @@ h2{
     transition: all 0.5s ease 0s;
 }
 .box:hover:before{
-    background: rgba(165, 132, 182, 0.9);
+    background: rgb(216, 223, 208);
     opacity: 70%;
 
 }
@@ -77,7 +79,7 @@ h2{
     left:-6%;
     /* left: 0; */
     /* background-color: #ebb537; */
-    background: rgb(182, 84, 182);
+    background: #016A70;
     height: 10vh;
     width: 100%;
 }
@@ -134,5 +136,5 @@ h2{
     color: #fff;
 }
 @media only screen and (max-width:990px){
-    .box{ margin-bottom: 20px; }
+    .box{ margin-bottom:5px; }
 }

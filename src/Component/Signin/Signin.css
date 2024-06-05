@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .left_data {
+      text-align: left;
+      width: 80%;
+    }
+    .buton{
+        width: 100%;
+    }
+  }
+  

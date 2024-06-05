@@ -1,4 +1,3 @@
-/* Container for the gallery page */
 
 /* Wrapper for the gallery */
 .galleryWrapper {
@@ -24,7 +23,7 @@
   margin: 0;
 }
 
-.filterItem ul button {
+/* .filterItem ul button {
   background: purple;
   color: #fff;
   padding: 8px 46px;
@@ -38,7 +37,64 @@
 .filterItem ul button:hover {
   background: rgb(182, 84, 182);
   cursor: pointer;
+} */
+/* Container for the filter items */
+.filterItem {
+  margin-top: -40px;
+  margin-bottom: 30px;
 }
+
+/* .filterItem ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 25px;
+} */
+
+.filterItem ul li {
+  margin: 0;
+}
+
+.filterItem ul button {
+  background: #A2C579;
+  /* background: #016A70; */
+  color: #fff;
+  padding: 8px 46px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 17px;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+.filterItem ul button:hover {
+  background: #016A70;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .filterItem ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .filterItem ul button {
+    margin-bottom: 5px;
+  }
+}
+/* 
+@media only screen and (min-width: 576px) {
+  .filterItem ul {
+    justify-content: flex-start;
+  }
+} */
 
 /* Container for the gallery items */
 .galleryContainer {
@@ -59,11 +115,11 @@
   height: 40vh;
   object-fit: cover;
   border-radius: 15px;
-  transition: transform 0.3s ease;
+  transition: all 1.5s ease 0s;
 }
 
 .galleryItem:hover img {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .galleryItem:before {
@@ -74,12 +130,13 @@
   top: 0;
   left: 0;
   z-index: 1;
-  transition: all 0.5s ease 0s;
+  transition: all 1.5s ease 0s;
 }
 
 .galleryItem:hover:before {
-  background: rgba(165, 132, 182, 0.9);
-  opacity: 70%;
+  /* background: #c0ceb2; */
+  background-color: rgba(236, 230, 230, 0.4);
+  opacity: 50%;
 }
 
 .galleryItem:after {
@@ -138,8 +195,8 @@
 
 .modal-content p {
   margin: 5px 0;
+  /* color: #016A70; */
 }
-
 /* Close button */
 .close-btn {
   position: absolute;
@@ -295,6 +352,36 @@ h2 {
 @media only screen and (max-width: 990px) {
   .box {
     margin-bottom: 20px;
+  }
+}
+/* Container for the gallery items */
+.galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 576px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .galleryContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .galleryContainer {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

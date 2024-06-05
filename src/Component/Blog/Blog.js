@@ -20,10 +20,10 @@ const Blog = () => {
               <img src={me} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Flower Bouquet</h2>
+                  <h2>Eid Basket</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                  </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ const Blog = () => {
                   <h2>Flower Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                 </div>
               </div>
             </div>
@@ -46,10 +46,10 @@ const Blog = () => {
               <img src={me2} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Flower Bouquet</h2>
+                  <h2>Birthday Box</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                 </div>
               </div>
             </div>
@@ -63,10 +63,10 @@ const Blog = () => {
               <img src={me3} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Flower Bouquet</h2>
+                  <h2>Red Rose Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                 </div>
               </div>
             </div>
@@ -76,10 +76,10 @@ const Blog = () => {
               <img src={me4} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Flower Bouquet</h2>
+                  <h2>Pink Rose Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                 </div>
               </div>
             </div>
@@ -89,10 +89,10 @@ const Blog = () => {
               <img src={me5} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Flower Bouquet</h2>
+                  <h2>Bouquet With Birthday Tag</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: 'white'}}>Read More</NavLink>
+                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
                {/* <a href="/Slick"> read more</a>  */}
                 </div>
               </div>

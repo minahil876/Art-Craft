@@ -13,64 +13,52 @@ import basket5 from "../../Assets/basket30.jpg";
 import basket6 from "../../Assets/img10.jpg";
 const posts = [
   {
-    // title: "Why You Should Be Worried About the Future of Life",
-    // link: "https://wphtmega.com/why-you-should-be-worried-about-the-future-of-life-style-2-2/",
     image: basket1,
-    category: "Creative",
+    category: "Flower Bouquet",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
-    title: "Prioritizing your digital item to get the most",
-    link: "https://wphtmega.com/prioritizing-your-digital-item-to-get-the-most-out-of-your-business-2/",
     image: basket2,
-    category: "Creative",
+    category: "Eid Box",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
       "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
-    title: "What Life Style Says About Your Personal Style",
-    link: "https://wphtmega.com/what-life-style-says-about-your-personal-style/",
     image: basket3,
-    category: "Creative",
+    category: "Pink Rose Bouquet",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+      "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
-    // title: "Why You Should Be Worried About the Future of Life",
-    // link: "https://wphtmega.com/why-you-should-be-worried-about-the-future-of-life-style-2-2/",
     image: basket4,
-    category: "Creative",
+    category: "Eid Box",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+      "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
-    // title: "Why You Should Be Worried About the Future of Life",
-    // link: "https://wphtmega.com/why-you-should-be-worried-about-the-future-of-life-style-2-2/",
     image: basket5,
-    category: "Creative",
+    category: "Red Rose Bouquet",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+      "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
-    // title: "Why You Should Be Worried About the Future of Life",
-    // link: "https://wphtmega.com/why-you-should-be-worried-about-the-future-of-life-style-2-2/",
     image: basket6,
-    category: "Creative",
+    category: "Birthdat Bouquet",
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+      "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
 ];
 
@@ -88,66 +76,76 @@ const Slick = () => {
   };
 
   return (
-<>
-<NavbarComponent/>
-    <div className="post-slider-container">
-      <Slider {...settings}>
-        {posts.map((post, index) => (
-          <div
-            key={index}
-            className="htmega-data-title htmega-single-post-slide"
-          >
+    <>
+      <NavbarComponent />
+      <div className="post-slider-container">
+        <Slider {...settings}>
+          {posts.map((post, index) => (
             <div
-              className="htmega-post-slider-st-6"
-              style={{ height: "80vh", width: "100% !important" }}
+              key={index}
+              className="htmega-data-title htmega-single-post-slide"
             >
-              <div className="htmega-post-slider-left ">
-                <div className="thumb ">
-                  <a href={post.link}>
-                    <img
-                      loading="lazy"
-                      decoding="async"
-                      width="1024"
-                      height="739"
-                      src={post.image}
-                      alt="Post slider widget"
-                    />
-                  </a>
+              <div
+                className="htmega-post-slider-st-6"
+                // style={{ height: "90vh", width: "100% !important" }}
+              >
+                <div className="htmega-post-slider-left ">
+                  <div className="thumb ">
+                    <a href={post.link}>
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        width="1024"
+                        height="739"
+                        src={post.image}
+                        alt="Post slider widget"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="htmega-post-slider-right">
-                <div className="content">
-                  <div className="post-inner">
-                    <ul className="post-category">
-                      <li>
-                        <div className="category creative" style={{color: 'purple', textDecoration: 'none'}}>
-                          {post.category}
-                        </div>
-                      </li>
-                    </ul>
-                      <p className="w-100" style={{fontSize: '20px'}}>{post.description}</p>
-                    {/* <h2>
-                      <a href={post.link}>{post.title}</a>
-                    </h2> */}
-                    <ul className="meta">
-                      <li>
-                        <i className="fa fa-user-circle"></i>
-                        <div>{post.author}</div>
-                      </li>
-                      <li>
-                        <i className="fa fa-clock-o"></i>
-                        {post.date}
-                      </li>
-                    </ul>
-                    {/* <p>{post.description}</p> */}
+                <div className="htmega-post-slider-right">
+                  <div className="content">
+                    <div className="post-inner">
+                      <ul className="post-category">
+                        <li>
+                          <div
+                            className="category creative"
+                            style={{
+                              color: "#016A70",
+                              textDecoration: "none",
+                              fontSize: "40px",
+                              textAlign: "center",
+                              fontFamily: '"Noto Serif Display", serif'
+                            }}
+                          >
+                            {post.category}
+                          </div>
+                        </li>
+                      </ul>
+                      <p className="w-200" style={{ fontSize: "20px" }}>
+                        {post.description}
+                      </p>
+                      <ul className="meta">
+                        <li>
+                        <div style={{color: '#016A70'}}>
+                          {/* <i className="fa fa-user-circle"></i> */}
+                          {post.author}</div>
+                        </li>
+                        <li style={{ color: '#016A70', marginLeft: '-10px'}}>
+                          {/* <i className="fa fa-clock-o"
+                            style={{ marginRight: "-10px"}}></i> */}
+                            {post.date}
+                          
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };

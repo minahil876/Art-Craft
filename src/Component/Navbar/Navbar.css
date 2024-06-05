@@ -1,3 +1,24 @@
+.navi {
+  transition: margin 0.3s ease, padding 0.3s ease;
+  position: sticky; /* Make the navbar sticky */
+  top: 10px; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+.navi.with-margin .custom-navbar {
+  margin: 20px 40px 0 40px; /* Add margin to the top, left, and right */
+  padding: 20px 40px; /* Add padding to the top, left, and right */
+}
+
+.navi.no-margin .custom-navbar {
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+}
+
+.custom-navbar {
+  background: #016A70;
+  height: 15vh;
+  transition: margin 0.3s ease, padding 0.3s ease;
+}
 
 .nav-link {
   color: white !important; 
@@ -5,22 +26,56 @@
   transition: color 0.3s;
 }
 
+.nav-link:hover {
+  color: #D2DE32 !important; /* Hover color */
+}
+
 .nav-link.active {
-  color:  white !important;
+  color: #D2DE32 !important;
   border-bottom: 2px solid; 
-  border-image: linear-gradient(to right,  #ff8a00, #da1b60); 
+  border-image: linear-gradient(to right, #A2C579 50%, #D2DE32 50%); 
   border-image-slice: 1;
 }
+
 .nav-link.active:hover {
-  color: #ff8a00 !important; 
+  color: #D2DE32 !important; /* Hover color when active */
 }
+
 .navbar-toggler {
-  border-color: purple !important; 
+  border-color: #D2DE32 !important; /* Border color */
   color: white;
 }
 
 .navbar-toggler-icon {
-  background-color: purple; 
+  background-color: #D2DE32; /* Background color */
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .navi.with-margin .custom-navbar {
+    margin: 10px 20px 0 20px; /* Adjusted margin for medium screens */
+    padding: 10px 20px; /* Adjusted padding for medium screens */
+  }
+  .navi.no-margin .custom-navbar {
+    margin: 0;
+    padding: 0;
+  }
+}
 
+@media (max-width: 768px) {
+  .navi.with-margin .custom-navbar {
+    margin: 5px 10px 0 10px; /* Adjusted margin for small screens */
+    padding: 5px 10px; /* Adjusted padding for small screens */
+  }
+  .navi.no-margin .custom-navbar {
+    margin: 0;
+    padding: 0;
+  }
+  .custom-navbar {
+    height: auto; /* Adjust height for small screens */
+  }
+  .nav-link {
+    font-size: 1rem; /* Adjust font size for small screens */
+    padding: 10px 0; /* Add padding for better spacing */
+  }
+}

@@ -2,7 +2,7 @@ import './Signup.css';
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import me from '../../Assets/login.png';
+import me from '../../Assets/signup.png';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -79,27 +79,30 @@ console.log("it is clciked")
       <div className="container mt-3">
         <section className="d-flex justify-content-between">
           <div className="left_data mt-3 p-3" style={{ width: "70%"}}>
-            <h3 className="text-center" style={{marginTop: '30px', marginRight: '80px'}}>Sign Up</h3>
+            <h3 className="text-center" style={{marginTop: '70px', marginRight: '80px'}}>
+            <span style={{color: '#016A70', fontFamily: '"Noto Serif Display", serif' }}>Sign</span> <span style={{color: '#D2DE32', fontFamily: '"Noto Serif Display", serif' }}>Up</span>
+            </h3>
             <Form onSubmit={handelsubmit}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" name="username" onChange={getdata} placeholder="Enter Your Name" style={{ width: "80%", height: "8vh", borderRadius: "15px", marginTop: '35px' }}/>
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <Form.Control type="text" name="username" onChange={getdata} placeholder="Enter Your Name" style={{ width: "100%", height: "8vh", borderRadius: "15px", marginTop: '35px' }}/>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" name="email" onChange={getdata} placeholder="Enter email" style={{ width: "80%", height: "8vh", borderRadius: "15px" }}/>
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <Form.Control type="email" name="email" onChange={getdata} placeholder="Enter email" style={{ width: "100%", height: "8vh", borderRadius: "15px" }}/>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" style={{ width: "80%", height: "8vh", borderRadius: "15px" }}/>
+              <Form.Group className="mb-4" controlId="formBasicPassword">
+                <Form.Control type="password" name="password" onChange={getdata} placeholder="Password" style={{ width: "100%", height: "8vh", borderRadius: "15px" }}/>
               </Form.Group>
              
               <Button className="btn-submit" onClick={addData} type="submit"  style={{
-                  background: "rgb(purple)",
+                  background: "#016A70",
                   marginRight: "78%",
                   marginTop: "20px",
                   height: "8vh",
                   borderRadius: "15px",
-                  backgroundColor: "purple",
+                  backgroundColor: "#016A70",
                   fontSize: "20px",
-                  width: "70%"
+                  width: "100%",
+                  border: 'none'
                 }}>
                 Submit
               </Button>

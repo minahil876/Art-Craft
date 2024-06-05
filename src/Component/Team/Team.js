@@ -2,17 +2,17 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./Team.css";
-import imeg from "../../Assets/girl.jpg";
+import imeg from "../../Assets/girl4.jpg";
 import imeg1 from "../../Assets/girl.jpg";
-import imeg2 from "../../Assets/girl.jpg";
+import imeg2 from "../../Assets/girl6.jpg";
 import './Team.css'
 class Team extends React.Component {
   render() {
     return (
       <div className="container">
         <div className="row text-center">
-          <h1  style={{color: "purple", fontSize: '35px',marginTop: "30px", marginBottom: '20px' }}>
-          <span>Meet</span> Our <span>Team</span> Members
+          <h1  style={{color: "#016A70", fontSize: '35px',marginTop: "30px", marginBottom: '20px' }}>
+          <span style={{color: '#016A70'}}>Meet</span> <span style={{color: '#D2DE32'}}>Our</span>  <span style={{color: '#016A70'}}>Team</span><span style={{color: '#D2DE32'}}> Members</span>
           </h1>
         </div>
 

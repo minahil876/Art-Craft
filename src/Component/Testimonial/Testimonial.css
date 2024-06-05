@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap'); */
 
 *{
     margin: 0;
@@ -9,6 +9,10 @@
     font-family: "Jersey 25 Charted", sans-serif;
 
 } */
+h1 span{
+  font-family: "Noto Serif Display", serif;
+
+}
 .boxtestimonial {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -21,8 +25,8 @@
   .imge img{
     border: 1px solid gray;
     margin-bottom: 20px;
-    height: 15vh;
-    width: 30%;
+    height: 23vh;
+    width: 40%;
     border-radius: 50%;
   }
   p span{

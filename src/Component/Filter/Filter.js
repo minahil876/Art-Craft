@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './Filter.css';
 
 import basket1 from '../../Assets/img6.jpg';
-import basket2 from '../../Assets/img8.jpg';
+import basket2 from '../../Assets/bouquet.jpeg';
 import basket3 from '../../Assets/basket30.jpg';
 import basket4 from '../../Assets/basket29.jpg';
 
-import basket5 from '../../Assets/basket5.jpg';
-import basket6 from '../../Assets/basket6.jpg';
-import basket7 from '../../Assets/basket7.jpg';
-import basket8 from '../../Assets/basket8.jpg';
+import basket5 from '../../Assets/img12.jpeg';
+import basket6 from '../../Assets/img21.jpeg';
+import basket7 from '../../Assets/img15.jpeg';
+import basket8 from '../../Assets/img19.jpeg';
 
 import basket9 from '../../Assets/nikkah3.jpg';
 import basket10 from '../../Assets/nikkah7.jpg';
@@ -44,10 +44,10 @@ const DetailModal = ({ show, item, onClose }) => {
         <span className="close-btn" onClick={onClose}>&times;</span>
         <img src={item.image} alt={item.title} />
         <h2>{item.title}</h2>
-        <p><strong>Materials:</strong> {item.materials}</p>
-        <p><strong>Size:</strong> {item.size}</p>
-        <p><strong>Price:</strong> {item.price}</p>
-        <p><strong>Customization:</strong> {item.customization}</p>
+        <p><strong style={{color: '#016A70'}}>Materials:</strong> {item.materials}</p>
+        <p><strong style={{color: '#016A70'}}>Size:</strong> {item.size}</p>
+        <p><strong style={{color: '#016A70'}}>Price:</strong> {item.price}</p>
+        <p><strong style={{color: '#016A70'}}>Customization:</strong> {item.customization}</p>
       </div>
     </div>
   );
@@ -87,10 +87,10 @@ const Filter = () => {
       <div className="galleryWrapper">
         <div className="filterItem">
           <ul>
-            <li><button onClick={showAll}>All</button></li>
+            <li><button onClick={showAll}  style={{fontFamily: '"Noto Serif Display", serif', fontSize: '18px'}}>All</button></li>
             {collection.map((item, index) => (
               <li key={index}>
-                <button onClick={() => { galleryFilter(item); }}>{item}</button>
+                <button onClick={() => { galleryFilter(item); }}  style={{fontFamily: '"Noto Serif Display", serif', fontSize: '18px'}}>{item}</button>
               </li>
             ))}
           </ul>

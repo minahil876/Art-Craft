@@ -11,9 +11,9 @@ function Home() {
       <div className="text">
         <div className="mydiv">
           <h2
-            style={{ textAlign: "center", fontSize: "40px", color: "purple" }}
+            style={{ textAlign: "center", fontSize: "40px"}}
           >
-            <span>Discover the</span> Artistry <span>of Craftsmanship</span>
+            <span style={{color: '#016A70'}}>Discover </span><span style={{color: '#D2DE32'}}>The</span> <span style={{color: '#016A70'}}>Artistry</span> <span style={{color: '#D2DE32'}}>Of</span> <span style={{color: '#016A70'}}>Craftsmanship</span>
           </h2>
           <p
             style={{
@@ -37,3 +37,47 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import Footer from "../Footer/Footer";
+// import "./Home.css";
+// import NavbarComponent from "../Navbar/Navbar";
+// import video from "../../Assets/video1.mp4";
+
+// function Home() {
+//   return (
+//     <div>
+//       <NavbarComponent />
+//       <div className="video-container">
+//         <video controls autoPlay style={{width: '100%', height: '90vh'}}>
+//           <source src={video} type="video/mp4" />
+//         </video>
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default Home;
+

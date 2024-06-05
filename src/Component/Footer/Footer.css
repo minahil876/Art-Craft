@@ -20,3 +20,14 @@
     margin-left: 5px; 
   }
    */
+   .button .btn:hover{
+    background-color: #A2C579 !important;
+   }
+   /* Footer.css */
+
+.lis li {
+list-style-type: none;
+}
+.touch .btn:hover{
+  background-color: #A2C579 !important;
+}

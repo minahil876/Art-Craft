@@ -19,7 +19,6 @@
   width: 100%;
   object-fit: cover;
 }
-
 .carousel-section,
 .text-section {
   flex: 1;
@@ -55,4 +54,34 @@
 
 .carousel-section .carousel-control-next {
   right: 10px;
+}
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Change flex direction to display items vertically */
+    align-items: center; /* Center items vertically */
+  }
+
+  .text-section {
+    order: 1; /* Display text section above carousel */
+    margin-top: 20px; /* Add margin between text and carousel */
+  }
+
+  .carousel-section {
+    order: 2; /* Display carousel below text section */
+    margin-top: 20px; /* Add margin between text and carousel */
+  }
+
+  .carousel-section{
+  flex: 1;
+  padding: 0px;
+}
+ 
+
+  .carousel-section img {
+   width: 100% !important; 
+    height: 60vh; /* Maintain aspect ratio of images */
+    margin: 0;
+    padding: 0;
+  }
 }

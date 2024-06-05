@@ -20,6 +20,7 @@ import Notification from './Component/Admin/Notification.js'
 // import PostSlider from './PostSlider';
 import Privacy from './Component/Privacy/Privacy';
 import Terms from './Component/Terms/Terms'
+import EditProduct from './Component/Admin/EditProduct.jsx';
 
 function App() {
   return (
@@ -46,9 +47,11 @@ function App() {
           <Route path='/admin'  element={<Admin/>}>
            <Route path='addproduct' element={<Addproduct/>}/>
            <Route path='removeproduct' element={<Removeproduct/>}/>
-           <Route path='updateproduct' element={<Updateproduct/>}/>
            <Route path='orderpayment' element={<Orderpayment/>}/>
            <Route path='notification' element={<Notification/>}/>
+           <Route path='updateproduct' element={<Updateproduct/>}>
+           <Route path='editproduct' element={<EditProduct/>}/>
+           </Route>
 
           </Route>
 {/* <Slick /> */}

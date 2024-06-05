@@ -13,7 +13,7 @@ const SearchForm = () => {
       className="container-fluid mb-5 wow fadeIn"
       data-wow-delay="0.1s"
       style={{
-        background: "purple",
+        background: "#016A70",
         padding: "35px",
         visibility: "visible",
         animationDelay: "0.1s",
@@ -29,7 +29,7 @@ const SearchForm = () => {
                   <span className="input-group-text border-0 bg-white">
                     <FontAwesomeIcon
                       icon={faMapMarkerAlt}
-                      style={{ color: "purple", fontSize: "20px" }}
+                      style={{ color: "#016A70", fontSize: "20px" }}
                     />
                   </span>
                   <input
@@ -44,7 +44,7 @@ const SearchForm = () => {
                   <span className="input-group-text border-0 bg-white">
                     <FontAwesomeIcon
                       icon={faGift}
-                      style={{ color: "purple", fontSize: "20px" }}
+                      style={{ color: "#016A70", fontSize: "20px" }}
                     />
                   </span>
                   <select className="form-select border-0 py-3" style={{fontSize: '18px'}}>
@@ -60,7 +60,7 @@ const SearchForm = () => {
                   <span className="input-group-text border-0 bg-white">
                     <FontAwesomeIcon
                       icon={faDollarSign}
-                      style={{ color: "purple", fontSize: "20px" }}
+                      style={{ color: "#016A70", fontSize: "20px" }}
                     />
                   </span>
                   <select className="form-select border-0 py-3" style={{fontSize: '18px'}}>
@@ -75,12 +75,12 @@ const SearchForm = () => {
           </div>
           <div className="col-md-2">
             <button
-              className="btn border-0 w-100 py-3"
-              style={{ background: "white", color: "black", fontSize: "18px" }}
+              className="btn2 border-0 w-100 py-3"
+              style={{ background: "white", color: "black", fontSize: "18px", borderRadius: '10px' }}
             >
               <FontAwesomeIcon
                 icon={faSearch}
-                style={{ color: "purple", fontSize: "20px" }}
+                style={{ color: "#016A70", fontSize: "20px" }}
               />
               Search
             </button>
