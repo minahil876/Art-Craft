@@ -54,7 +54,7 @@ span {
 }
 
 .right1 img:hover {
-  transform: scale(1.05);
+  transform: scale(1.14);
 }
 
 .right1 img {
@@ -62,14 +62,11 @@ span {
   height: 80vh;
   transition: all 1.5s ease 0s;
 }
-.right1 img:hover {
-  transform: scale(1.2);
-}
 .right1 {
   overflow: hidden !important;
 }
 .left img:hover {
-  transform: scale(1.2);
+  transform: scale(1.14);
 }
 
 .left img {
@@ -98,11 +95,7 @@ span {
     order: 2; /* Ensure image is at the bottom */
   }
   
-  .left img, .right1 img {
-    height: 50vh;
-    max-width: 100%;
-    width: 100%; /* Set the width of images to 100% */
-  }
+ 
 }
 
 /* For desktop and larger screens */
@@ -193,5 +186,9 @@ span {
 @media screen and (max-width: 576px) {
   .box1 {
     flex-basis: calc(100% - 30px); /* One item per row with some margin on both sides */
+  }
+  .left img, .right1 img{
+    height: 50vh;
+    width: 100%;
   }
 }

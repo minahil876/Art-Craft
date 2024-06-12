@@ -46,7 +46,7 @@ h2 span{
   
   .mydiv {
     width: 90%; 
-    top: 70%; 
+    top: 75%; 
     transform: translate(-50%, -70%); 
   }
   
@@ -75,4 +75,164 @@ h2 span{
   justify-content: center;
   align-items: center;
   padding: 20px;
+} */
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 span {
+  font-family: "Noto Serif Display", serif;
+}
+
+.text {
+  background-image: url("../../Assets/img18.jpeg");
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  opacity: 80%; 
+  color: black;
+  position: relative;
+  padding-top: 15vh; /* Adjust padding-top to account for the navbar height */
+}
+
+.mydiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center; 
+}
+
+.mydiv h2 {
+  font-size: 40px;
+}
+
+.mydiv p {
+  font-size: 28px;
+}
+
+/* Responsive styles */
+/* Note: Place larger screen media queries before smaller screen media queries */
+/* 
+@media (max-width: 1280px) {
+  .text {
+    height: 90vh; 
+    padding-top: 13vh; 
+  }
+
+  .mydiv {
+    width: 80%;
+    top: 55%; 
+    transform: translate(-50%, -55%);
+  }
+
+  .mydiv h2 {
+    font-size: 36px; 
+  }
+
+  .mydiv p {
+    font-size: 24px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+    height: 80vh; 
+    padding-top: 12vh;
+  }
+
+  .mydiv {
+    width: 85%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+
+  .mydiv h2 {
+    font-size: 32px; 
+  }
+
+  .mydiv p {
+    font-size: 22px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    height: 70vh; 
+    padding-top: 10vh; 
+  }
+
+  .mydiv {
+    width: 90%; 
+    top: 65%; 
+    transform: translate(-50%, -65%); 
+  }
+
+  .mydiv h2 {
+    font-size: 30px; 
+  }
+
+  .mydiv p {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    height: 60vh; 
+    padding-top: 8vh; 
+  }
+
+  .mydiv {
+    width: 95%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+  }
+
+  .mydiv h2 {
+    font-size: 26px; 
+  }
+
+  .mydiv p {
+    font-size: 16px; 
+  }
+}
+
+@media (max-width: 375px) {
+  .text {
+    height: 50vh; 
+    padding-top: 6vh;
+  }
+
+  .mydiv {
+    width: 100%;
+    top: 75%; 
+    transform: translate(-50%, -75%);
+  }
+
+  .mydiv h2 {
+    font-size: 22px; 
+  }
+
+  .mydiv p {
+    font-size: 14px; 
+  }
 } */

@@ -10,7 +10,7 @@ import {
 const SearchForm = () => {
   return (
     <div
-      className="container-fluid mb-5 wow fadeIn"
+       className="container-fluid mb-5 wow fadeIn"
       data-wow-delay="0.1s"
       style={{
         background: "#016A70",
@@ -49,9 +49,9 @@ const SearchForm = () => {
                   </span>
                   <select className="form-select border-0 py-3" style={{fontSize: '18px'}}>
                     <option selected>Gift Type (any)</option>
-                    <option value="1">Gift Type 1</option>
-                    <option value="2">Gift Type 2</option>
-                    <option value="3">Gift Type 3</option>
+                    <option value="1">Anniversary Gifts</option>
+                    <option value="2">Birthday Gifts</option>
+                    <option value="3">Wedding</option>
                   </select>
                 </div>
               </div>
@@ -65,9 +65,9 @@ const SearchForm = () => {
                   </span>
                   <select className="form-select border-0 py-3" style={{fontSize: '18px'}}>
                     <option selected>Price Range (any)</option>
-                    <option value="1">Price Range 1</option>
-                    <option value="2">Price Range 2</option>
-                    <option value="3">Price Range 3</option>
+                    <option value="1">5000-10000</option>
+                    <option value="2">10000-15000</option>
+                    <option value="3">15000-25000</option>
                   </select>
                 </div>
               </div>

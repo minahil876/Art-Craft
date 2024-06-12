@@ -10,13 +10,13 @@ import Footer from "../Footer/Footer";
 import axios from "axios";
 
 const Procard = () => {
-  const [product,setproduct]=useState([]);
-  useEffect(()=>{
-axios.get('http://192.168.12.108:8000/crafters/products/').then((res)=>{
-  console.log(res.data);
-  setproduct(res.data)
-})
-  },[])
+  const [product, setproduct] = useState([]);
+  useEffect(() => {
+    axios.get("http://192.168.12.107:8000/crafters/products/").then((res) => {
+      console.log(res.data);
+      setproduct(res.data);
+    });
+  }, []);
   return (
     <>
       {/* <div className="container">
@@ -74,13 +74,12 @@ axios.get('http://192.168.12.108:8000/crafters/products/').then((res)=>{
             </div>
           </div>
           </div> */}
-     
-      
-          <div className="row" style={{ marginTop: '30px' }}>
-      {product.map((item,ind)=>{
-        return(
-          <>
-          {/* <div className="col-md-4 container">
+
+        <div className="row" style={{ marginTop: "30px" }}>
+          {product.map((item, ind) => {
+            return (
+              <>
+                {/* <div className="col-md-4 container">
           <div class="card" style={{width: '18rem'}}>
   <img src={item.product_picture} class="card-img-top" alt="..."/>
   <div class="card-body">
@@ -90,17 +89,17 @@ axios.get('http://192.168.12.108:8000/crafters/products/').then((res)=>{
   </div>
 </div>
 </div> */}
-<div className="col-md-4 col-sm-6">
-            <div className="box4">
-              <img src={item.product_picture} alt="" />
-              <div className="box4-content">
-                <h2>{item.name}</h2>
-              </div>
-            </div>
-          </div>
-          </>
-        )
-      })}
+                <div className="col-md-4 col-sm-6">
+                  <div className="box4">
+                    <img src={item.product_picture} alt="" />
+                    <div className="box4-content">
+                      <h2>{item.name}</h2>
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
       <Footer />

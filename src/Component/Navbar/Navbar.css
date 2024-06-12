@@ -4,6 +4,7 @@
   top: 10px; /* Stick to the top of the viewport */
   z-index: 1000; /* Ensure it stays above other content */
 }
+
 .navi.with-margin .custom-navbar {
   margin: 20px 40px 0 40px; /* Add margin to the top, left, and right */
   padding: 20px 40px; /* Add padding to the top, left, and right */
@@ -50,32 +51,100 @@
   background-color: #D2DE32; /* Background color */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 992px) {
-  .navi.with-margin .custom-navbar {
-    margin: 10px 20px 0 20px; /* Adjusted margin for medium screens */
-    padding: 10px 20px; /* Adjusted padding for medium screens */
+/* Responsive styles */
+/* Note: Place larger screen media queries before smaller screen media queries */
+
+@media (max-width: 1280px) {
+  .custom-navbar {
+    height: 14vh; /* Adjust height for smaller screens */
+    padding: 18px 36px; /* Reduce padding */
   }
-  .navi.no-margin .custom-navbar {
-    margin: 0;
-    padding: 0;
+
+  .navi.with-margin .custom-navbar {
+    margin: 18px 36px 0 36px; /* Adjust margin */
+    padding: 18px 36px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 1024px) {
+  .custom-navbar {
+    height: 12vh; /* Adjust height for smaller screens */
+    padding: 10px 20px; /* Reduce padding */
+  }
+
+  .navi.with-margin .custom-navbar {
+    margin: 10px 20px 0 20px; /* Adjust margin */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 1005px) {
+  .custom-navbar {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 15px 25px; /* Reduce padding */
+  }
+
+  .navi.with-margin .custom-navbar {
+    margin: 15px 25px 0 25px; /* Adjust margin */
+    padding: 15px 25px; /* Adjust padding */
   }
 }
 
 @media (max-width: 768px) {
-  .navi.with-margin .custom-navbar {
-    margin: 5px 10px 0 10px; /* Adjusted margin for small screens */
-    padding: 5px 10px; /* Adjusted padding for small screens */
-  }
-  .navi.no-margin .custom-navbar {
-    margin: 0;
-    padding: 0;
-  }
   .custom-navbar {
-    height: auto; /* Adjust height for small screens */
+    height: auto; /* Adjust height for smaller screens */
+    padding: 10px 15px; /* Further reduce padding */
   }
+
+  .navi.with-margin .custom-navbar {
+    margin: 10px 15px 0 15px; /* Further adjust margin */
+    padding: 10px 15px; /* Further adjust padding */
+  }
+
   .nav-link {
-    font-size: 1rem; /* Adjust font size for small screens */
-    padding: 10px 0; /* Add padding for better spacing */
+    display: block; /* Stack nav links vertically */
+    margin-bottom: 10px; /* Add space between nav links */
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 5px 10px; /* Minimize padding */
+  }
+
+  .navi.with-margin .custom-navbar {
+    margin: 5px 10px 0 10px; /* Minimize margin */
+    padding: 5px 10px; /* Minimize padding */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Reduce font size */
+    margin-bottom: 5px; /* Reduce space between nav links */
+  }
+
+  .navbar-toggler {
+    padding: 5px; /* Adjust padding for the toggler */
+  }
+}
+
+@media (max-width: 375px) {
+  .custom-navbar {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 2px 5px; /* Further minimize padding */
+  }
+
+  .navi.with-margin .custom-navbar {
+    margin: 2px 5px 0 5px; /* Further minimize margin */
+    padding: 2px 5px; /* Further minimize padding */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Further reduce font size */
+    margin-bottom: 2px; /* Further reduce space between nav links */
+  }
+
+  .navbar-toggler {
+    padding: 2px; /* Further adjust padding for the toggler */
   }
 }

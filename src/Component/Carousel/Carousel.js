@@ -1,17 +1,23 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import im1 from '../../Assets/basket32.jpg';
-import im2 from '../../Assets/basket30.jpg';
-import im3 from '../../Assets/basket31.jpg';
-import im4 from '../../Assets/basket29.jpg';
-import './Carousel.css';
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import im1 from "../../Assets/img15.jpeg";
+import im2 from "../../Assets/basket30.jpg";
+import im3 from "../../Assets/img21.jpeg";
+import im4 from "../../Assets/basket31.jpg";
+import im5 from "../../Assets/img19.jpeg";
+import "./Carousel.css";
 
 const Home = () => {
   return (
     <div className="home-container ">
       <div className="text-section">
-        <h1 style={{marginTop: '80px',fontSize: '34px'}}><span style={{color: '#016A70'}}>Discover</span> <span style={{color: '#D2DE32'}}>Elegance</span> <span style={{color: '#016A70'}}>And</span> <span style={{color: '#D2DE32'}}>Craftsmanship</span></h1>
+        <h1 style={{ marginTop: "80px", fontSize: "34px" }}>
+          <span style={{ color: "#016A70" }}>Discover</span>{" "}
+          <span style={{ color: "#D2DE32" }}>Elegance</span>{" "}
+          <span style={{ color: "#016A70" }}>And</span>{" "}
+          <span style={{ color: "#D2DE32" }}>Craftsmanship</span>
+        </h1>
         <p>
           "Step into the enchanting world of AR Craft Gallery, where elegance
           meets craftsmanship. Explore our diverse array of floral bouquets,
@@ -26,8 +32,8 @@ const Home = () => {
           indicators={false}
           interval={2500}
           pause={false}
-          nextIcon={<span className="carousel-control-next-icon"/>}
-          prevIcon={<span className="carousel-control-prev-icon"/>}
+          nextIcon={<span className="carousel-control-next-icon" />}
+          prevIcon={<span className="carousel-control-prev-icon" />}
         >
           <Carousel.Item>
             <img src={im1} className="d-block " alt="First slide" />
@@ -40,6 +46,9 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img src={im4} className="d-block" alt="Fourth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={im5} className="d-block" alt="Fourth slide" />
           </Carousel.Item>
         </Carousel>
       </div>

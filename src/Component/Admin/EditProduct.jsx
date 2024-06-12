@@ -38,7 +38,7 @@ function EditProduct() {
 
     try {
       const response = await axios.patch(
-        `http://192.168.12.108:8000/crafters/products/${id}/`,
+        `http://192.168.12.106:8000/crafters/products/${id}/`,
         product,
         // {
         //   headers: {

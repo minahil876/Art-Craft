@@ -1,33 +1,10 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.touch p:hover{
+color:#016A70;
 }
-.footer-menu {
-    color: white; 
-}
-  .footer-menu a {
-    text-decoration: none; 
-    color: white; 
-    margin-left: 13px;
-  }
-  
-  .footer-menu a:hover {
-    text-decoration: underline;
-  }
-  .footer-menu a:not(:last-child)::after {
-    content: "|"; 
-    margin-left: 5px; 
-  }
-   */
-   .button .btn:hover{
-    background-color: #A2C579 !important;
-   }
-   /* Footer.css */
 
 .lis li {
 list-style-type: none;
 }
 .touch .btn:hover{
-  background-color: #A2C579 !important;
+  background-color: #016A70 !important;
 }

@@ -21,6 +21,11 @@ import Notification from './Component/Admin/Notification.js'
 import Privacy from './Component/Privacy/Privacy';
 import Terms from './Component/Terms/Terms'
 import EditProduct from './Component/Admin/EditProduct.jsx';
+// import Uhome
+import Uhome from './user/Uhome.jsx';
+import Uproduct from './user/Uproduct.jsx';
+import Cart from './user/Cart.jsx';
+import Vorder from './user/Vorder.jsx';
 
 function App() {
   return (
@@ -55,6 +60,15 @@ function App() {
 
           </Route>
 {/* <Slick /> */}
+
+
+
+
+{/* user login start */}
+<Route path='/uhome' element={<Uhome/>} />
+<Route path='/uproduct' element={<Uproduct/>} />
+<Route path='/cart' element={<Cart/>} />
+<Route path='/uorder' element={<Vorder/>} />
         </Routes>
         
       </BrowserRouter>

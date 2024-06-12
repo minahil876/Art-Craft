@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Craftgallery.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import Footer from '../Footer/Footer'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../Footer/Footer";
 import Img1 from "../../Assets/basket30.jpg";
 import Img2 from "../../Assets/img8.jpg";
 import Img3 from "../../Assets/img8.jpg";
@@ -46,28 +46,26 @@ const Craftgallery = () => {
   return (
     <>
       {/* <NavbarComponent/> */}
-    <div>
-
-    <div className={model ? "model open" : "model"}>
-        <img src={tempimgSrc} alt="model"/>
-        <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)}/>
+      <div>
+        <div className={model ? "model open" : "model"}>
+          <img src={tempimgSrc} alt="model" />
+          <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)} />
+        </div>
+        <div className="gallery">
+          {data.map((item, index) => {
+            return (
+              <div
+                className="pict"
+                key={index}
+                onClick={() => getImg(item.imgSrc)}
+              >
+                <img src={item.imgSrc} style={{ width: "100%" }} alt="pict" />
+              </div>
+            );
+          })}
+        </div>
+        <Footer />
       </div>
-      <div className="gallery">
-        {data.map((item, index) => {
-          return (
-            <div
-              className="pict"
-              key={index}
-              onClick={() => getImg(item.imgSrc)}
-            >
-              <img src={item.imgSrc} style={{ width: "100%" }} alt="pict" />
-            </div>
-          );
-        })}
-      </div>
-      <Footer />
-    </div>
-   
     </>
   );
 };

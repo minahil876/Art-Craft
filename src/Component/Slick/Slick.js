@@ -18,7 +18,7 @@ const posts = [
     author: "Madhusudan",
     date: "22 December 2021",
     description:
-    "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
+      "Add this HT Mega Elementor Post slider widget to your blog, and you'll be able to display posts in theLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sit amet ligula tincidunt commodo. Duis sed risus sed nisl ultrices tristique. Integer vel metus volutpat, fermentum erat nec, viverra odio. Aliquam nec velit sit amet quam euismod dapibus. Nulla facilisi. Sed at libero condimentum, ultrices nisi ut, ultricies odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut sapien vel turpis lobortis consequat sed sit amet arcu. Sed in pretium nulla, nec bibendum nisi. Donec ac ipsum ac arcu tincidunt elementum id et sapien. Morbi mattis, velit vitae commodo molestie, erat est commodo justo, nec efficitur ipsum metus vel orci.",
   },
   {
     image: basket2,
@@ -115,7 +115,7 @@ const Slick = () => {
                               textDecoration: "none",
                               fontSize: "40px",
                               textAlign: "center",
-                              fontFamily: '"Noto Serif Display", serif'
+                              fontFamily: '"Noto Serif Display", serif',
                             }}
                           >
                             {post.category}
@@ -127,15 +127,15 @@ const Slick = () => {
                       </p>
                       <ul className="meta">
                         <li>
-                        <div style={{color: '#016A70'}}>
-                          {/* <i className="fa fa-user-circle"></i> */}
-                          {post.author}</div>
+                          <div style={{ color: "#016A70" }}>
+                            {/* <i className="fa fa-user-circle"></i> */}
+                            {post.author}
+                          </div>
                         </li>
-                        <li style={{ color: '#016A70', marginLeft: '-10px'}}>
+                        <li style={{ color: "#016A70", marginLeft: "-10px" }}>
                           {/* <i className="fa fa-clock-o"
                             style={{ marginRight: "-10px"}}></i> */}
-                            {post.date}
-                          
+                          {post.date}
                         </li>
                       </ul>
                     </div>

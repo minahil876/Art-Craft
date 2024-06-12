@@ -33,7 +33,7 @@ const Signup = () => {
   const addData = (e) => {
 
     e.preventDefault();
-axios.post(' http://192.168.12.107:8000/crafters/register/',inpval).then((res)=>{
+axios.post(' http://192.168.12.106:8000/crafters/register/',inpval).then((res)=>{
   console.log(res.data)
 }).catch((err)=>{
   console.log(err)

@@ -10,10 +10,12 @@ function Home() {
       <NavbarComponent />
       <div className="text">
         <div className="mydiv">
-          <h2
-            style={{ textAlign: "center", fontSize: "40px"}}
-          >
-            <span style={{color: '#016A70'}}>Discover </span><span style={{color: '#D2DE32'}}>The</span> <span style={{color: '#016A70'}}>Artistry</span> <span style={{color: '#D2DE32'}}>Of</span> <span style={{color: '#016A70'}}>Craftsmanship</span>
+          <h2 style={{ textAlign: "center", fontSize: "40px" }}>
+            <span style={{ color: "#016A70" }}>Discover </span>
+            <span style={{ color: "#D2DE32" }}>The</span>{" "}
+            <span style={{ color: "#016A70" }}>Artistry</span>{" "}
+            <span style={{ color: "#D2DE32" }}>Of</span>{" "}
+            <span style={{ color: "#016A70" }}>Craftsmanship</span>
           </h2>
           <p
             style={{
@@ -38,27 +40,6 @@ function Home() {
 
 export default Home;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import React from "react";
 // import Footer from "../Footer/Footer";
 // import "./Home.css";
@@ -80,4 +61,3 @@ export default Home;
 // }
 
 // export default Home;
-

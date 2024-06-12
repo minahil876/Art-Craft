@@ -12,9 +12,9 @@ import NavbarComponent from "../Navbar/Navbar";
 const Blog = () => {
   return (
     <>
-    <NavbarComponent/>
+      <NavbarComponent />
       <div class="container">
-        <div class="row" style={{marginTop: '30px'}}>
+        <div class="row" style={{ marginTop: "30px" }}>
           <div class="col-md-4 col-sm-6">
             <div class="box">
               <img src={me} alt="" />
@@ -23,8 +23,10 @@ const Blog = () => {
                   <h2>Eid Basket</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
-                 </div>
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
+                </div>
               </div>
             </div>
           </div>
@@ -36,7 +38,9 @@ const Blog = () => {
                   <h2>Flower Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -49,7 +53,9 @@ const Blog = () => {
                   <h2>Birthday Box</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -57,7 +63,7 @@ const Blog = () => {
         </div>
       </div>
       <div class="container">
-        <div class="row" style={{marginTop: '30px'}}>
+        <div class="row" style={{ marginTop: "30px" }}>
           <div class="col-md-4 col-sm-6">
             <div class="box">
               <img src={me3} alt="" />
@@ -66,7 +72,9 @@ const Blog = () => {
                   <h2>Red Rose Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -79,7 +87,9 @@ const Blog = () => {
                   <h2>Pink Rose Bouquet</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -92,8 +102,10 @@ const Blog = () => {
                   <h2>Bouquet With Birthday Tag</h2>
                 </ul>
                 <div class="box-profile">
-                <NavLink to="/slick" style={{color: '#016A70'}}>Read More</NavLink>
-               {/* <a href="/Slick"> read more</a>  */}
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
+                  {/* <a href="/Slick"> read more</a>  */}
                 </div>
               </div>
             </div>

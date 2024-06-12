@@ -42,7 +42,7 @@ const Signin = () => {
     //     position: "top-center",
     //   });
     } else {
-      axios.post('http://192.168.12.108:8000/crafters/login/', inpval)
+      axios.post('http://192.168.12.106:8000/crafters/login/', inpval)
         .then((res) => {
           console.log(res.data);
           if (res.data.user.role==="user") { // Adjust the condition according to your backend response
@@ -51,7 +51,7 @@ const Signin = () => {
             });
             sessionStorage.setItem("ulogin", JSON.stringify(res.data.user));
             sessionStorage.setItem("token", JSON.stringify(res.data.access));
-            history("/details");
+            history("/uhome");
           }else if(res.data.user.role==="admin"){
             console.log("admin login")
             sessionStorage.setItem("alogin", JSON.stringify(res.data.user));
