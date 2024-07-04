@@ -6,7 +6,7 @@ const Vorder = () => {
     const [order, getorder] = useState([]);
     const data = JSON.parse(sessionStorage.getItem('ulogin'));
     const token = JSON.parse(sessionStorage.getItem('token'));
-    const user_id = data.id;
+    // const user_id = data.id;
 
     useEffect(() => {
         axios.get('http://192.168.12.103:8002/crafters/checkout/', {
@@ -17,7 +17,7 @@ const Vorder = () => {
             console.log(res.data.order_items);
             getorder(res.data.order_items);
         })
-    }, []); // Added empty dependency array to ensure it runs only once
+    }, [token]); // Added empty dependency array to ensure it runs only once
 
     return (
         <div className='container-fluid row mt-5'>

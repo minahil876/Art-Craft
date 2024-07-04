@@ -15,15 +15,15 @@ const [product,setproduct]=useState(0);
 const [user,setuser]=useState(0);
 const [norder,setorder]=useState(0);
 const [deliver, setDeliver] = useState([]);
-const [feedback, setFeedback] = useState({ total: 0, positive: 0, negative: 0 });
-  const [messages, setMessages] = useState({ read: 0, unread: 0 });
+const [setFeedback] = useState({ total: 0, positive: 0, negative: 0 });
+  const [setMessages] = useState({ read: 0, unread: 0 });
   // const [pendingOrders, setPendingOrders] = useState({ pending: 0, processed: 0, completed: 0 });
 
   // Sample data for feedback and messages
   useEffect(() => {
     setFeedback({ total: 385749, positive: 355689, negative: 30060 });
     setMessages({ read: 450, unread: 120 });
-  }, []);
+  }, [setFeedback, setMessages]);
 
   // const feedbackData = {
   //   labels: ['Positive', 'Negative'],
@@ -98,9 +98,9 @@ useEffect(() => {
     });
 }, []);
 
-const currentDay = new Date().getDate();
-const monthlyTarget = 30; // Assuming 30 days in a month
-const targetPercentage = ((order / (monthlyTarget / 30)) * currentDay).toFixed(2);
+// const currentDay = new Date().getDate();
+// const monthlyTarget = 30; // Assuming 30 days in a month
+// const targetPercentage = ((order / (monthlyTarget / 30)) * currentDay).toFixed(2);
 
   return (
     <>

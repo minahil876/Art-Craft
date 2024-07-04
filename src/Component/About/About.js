@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import "./About.css";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ime from "../../Assets/communicate.png";
 import ime1 from "../../Assets/designs.png";
 import ime2 from "../../Assets/custom.png";

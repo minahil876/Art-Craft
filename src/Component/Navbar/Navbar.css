@@ -109,6 +109,8 @@
   .nav-link {
     display: block; /* Stack nav links vertically */
     margin-bottom: 10px; /* Add space between nav links */
+    font-size: 20px;
+
   }
 }
 
@@ -126,6 +128,8 @@
   .nav-link {
     font-size: 14px; /* Reduce font size */
     margin-bottom: 5px; /* Reduce space between nav links */
+    font-size: 20px;
+
   }
 
   .navbar-toggler {
@@ -147,6 +151,7 @@
   .nav-link {
     font-size: 14px; /* Further reduce font size */
     margin-bottom: 2px; /* Further reduce space between nav links */
+    font-size: 20px;
   }
 
   .navbar-toggler {

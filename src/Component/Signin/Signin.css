@@ -14,4 +14,21 @@
     width: 34vw;
     padding: 30px 20px;
   }
-  
+  /* Signin.css */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column-reverse; /* Stack items in a column and reverse the order */
+  }
+
+  .left_data {
+    width: 100%; /* Take full width on small screens */
+  }
+
+  .signin-image {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .aa a{
+margin-left: 7rem !important;
+  }
+}

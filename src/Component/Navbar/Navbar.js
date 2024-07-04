@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import { FaUserCircle } from "react-icons/fa"; 
+// import { FaUserCircle } from "react-icons/fa"; 
 
 const NavbarComponent = () => {
   const navigate=useNavigate();

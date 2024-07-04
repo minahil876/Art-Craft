@@ -2,25 +2,25 @@ import React, { useEffect } from 'react'
 import { useState } from "react"
 import axios from 'axios';
 import Unav from './Unav';
-import { get } from 'jquery';
+// import { get } from 'jquery';
 
 
-function getDate(){
-  const today=new Date();
-  const month=today.getMonth()+1;
-  const year=today.getFullYear();
-  const date=today.getDate();
-  return `${month}/${date}/${year}`
-}
+// function getDate(){
+//   const today=new Date();
+//   const month=today.getMonth()+1;
+//   const year=today.getFullYear();
+//   const date=today.getDate();
+//   return `${month}/${date}/${year}`
+// }
 
 
 
 
 const Cart = () => {
-  const [currentDate,setcurrentDate]=useState(getDate());
+  // const [currentDate, setcurrentDate]=useState(getDate());
     const [cart, setCart] = useState([]);
     const data = JSON.parse(sessionStorage.getItem('ulogin'));
-  const token = JSON.parse(sessionStorage.getItem('token'));
+ const token = JSON.parse(sessionStorage.getItem('token'));
   const user_id = data.id;
   useEffect(()=>{
     axios.get('http://192.168.12.103:8002/crafters/user-cart/', {

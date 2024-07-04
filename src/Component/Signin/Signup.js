@@ -17,10 +17,8 @@ const Signup = () => {
     email: '',
     password: '',
     profile_photo: null
-   
   });
 
-  const [data, setData] = useState([]);
   const [user, setUser] = useState(null);
 
   const getdata = (e) => {
@@ -40,7 +38,7 @@ const Signup = () => {
 
   const addData = (e) => {
     e.preventDefault();
-    const { username, email, password, profile_photo, } = inpval;
+    const { username, email, password, profile_photo } = inpval;
 
     if (username === '') {
       toast.error('Name field is required!', {
@@ -72,7 +70,7 @@ const Signup = () => {
         formData.append('profile_photo', profile_photo);
       }
 
-      axios.post('http://192.168.12.103:8002/crafters/register/', formData)
+      axios.post('http://192.168.12.108:8002/crafters/register/', formData)
         .then((res) => {
           console.log(res.data);
           setUser({
@@ -80,7 +78,6 @@ const Signup = () => {
             image: res.data.image, // Assuming the response includes an image URL
           });
           history('/signin');
-          localStorage.setItem('useryoutube', JSON.stringify([...data, inpval]));
         })
         .catch((err) => {
           console.log(err);
@@ -92,72 +89,74 @@ const Signup = () => {
     <>
       <NavbarComponent username={user?.username} image={user?.image} />
       <div className="container mt-3">
-        <section className="d-flex justify-content-between">
-          <div className="left_data mt-3 p-3" style={{ width: "70%" }}>
-            <h3 className="text-center" style={{ marginTop: '70px', marginRight: '80px' }}>
-              <span style={{ color: '#016A70', fontFamily: '"Noto Serif Display", serif' }}>Sign</span> 
-              <span style={{ color: '#D2DE32', fontFamily: '"Noto Serif Display", serif' }}>Up</span>
-            </h3>
-            <Form onSubmit={addData}>
-              <Form.Group className="mb-4" controlId="formBasicUsername">
-                <Form.Control 
-                  type="text" 
-                  name="username" 
-                  onChange={getdata} 
-                  placeholder="Enter Your Name" 
-                  style={{ width: "100%", height: "8vh", borderRadius: "15px", marginTop: '35px' }} 
-                />
-              </Form.Group>
-              <Form.Group className="mb-4" controlId="formBasicEmail">
-                <Form.Control 
-                  type="email" 
-                  name="email" 
-                  onChange={getdata} 
-                  placeholder="Enter email" 
-                  style={{ width: "100%", height: "8vh", borderRadius: "15px" }} 
-                />
-              </Form.Group>
-              <Form.Group className="mb-4" controlId="formBasicPassword">
-                <Form.Control 
-                  type="password" 
-                  name="password" 
-                  onChange={getdata} 
-                  placeholder="Password" 
-                  style={{ width: "100%", height: "8vh", borderRadius: "15px" }} 
-                />
-              </Form.Group>
-              <Form.Group className="mb-4" controlId="formBasicImage">
-                <Form.Control 
-                  type="file" 
-                  name="profile_photo" 
-                  onChange={getdata} 
-                  placeholder="Upload Image" 
-                  style={{ width: "100%", height: "8vh", borderRadius: "15px" }} 
-                />
-              </Form.Group>
-              <Button 
-                className="btn-submit" 
-                type="submit" 
-                style={{
-                  background: "#016A70",
-                  marginRight: "78%",
-                  marginTop: "20px",
-                  height: "8vh",
-                  borderRadius: "15px",
-                  backgroundColor: "#016A70",
-                  fontSize: "20px",
-                  width: "100%",
-                  border: 'none'
-                }}
-              >
-                Submit
-              </Button>
-            </Form>
-            <p className="mt-3">
-              Already Have an Account? <span><NavLink to="/Signin">SignIn</NavLink></span>{' '}
-            </p>
+        <section className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div className="col-md-6 order-2 order-md-1">
+            <div className="left_data mt-3 p-3">
+              <h3 className="text-center" style={{ marginTop: '70px' }}>
+                <span style={{ color: '#016A70', fontFamily: '"Noto Serif Display", serif' }}>Sign</span> 
+                <span style={{ color: '#D2DE32', fontFamily: '"Noto Serif Display", serif' }}>Up</span>
+              </h3>
+              <Form onSubmit={addData}>
+                <Form.Group className="mb-4" controlId="formBasicUsername">
+                  <Form.Control 
+                    type="text" 
+                    name="username" 
+                    onChange={getdata} 
+                    placeholder="Enter Your Name" 
+                    style={{ height: "8vh", borderRadius: "15px", marginTop: '35px' }} 
+                  />
+                </Form.Group>
+                <Form.Group className="mb-4" controlId="formBasicEmail">
+                  <Form.Control 
+                    type="email" 
+                    name="email" 
+                    onChange={getdata} 
+                    placeholder="Enter email" 
+                    style={{ height: "8vh", borderRadius: "15px" }} 
+                  />
+                </Form.Group>
+                <Form.Group className="mb-4" controlId="formBasicPassword">
+                  <Form.Control 
+                    type="password" 
+                    name="password" 
+                    onChange={getdata} 
+                    placeholder="Password" 
+                    style={{ height: "8vh", borderRadius: "15px" }} 
+                  />
+                </Form.Group>
+                <Form.Group className="mb-4" controlId="formBasicImage">
+                  <Form.Control 
+                    type="file" 
+                    name="profile_photo" 
+                    onChange={getdata} 
+                    placeholder="Upload Image" 
+                    style={{ height: "8vh", borderRadius: "15px" }} 
+                  />
+                </Form.Group>
+                <Button 
+                  className="btn-submit" 
+                  type="submit" 
+                  style={{
+                    background: "#016A70",
+                    marginTop: "20px",
+                    height: "8vh",
+                    borderRadius: "15px",
+                    fontSize: "20px",
+                    width: "100%",
+                    border: 'none'
+                  }}
+                >
+                  Submit
+                </Button>
+              </Form>
+              <p className="mt-3">
+                Already Have an Account? <NavLink to="/Signin">Sign In</NavLink>
+              </p>
+            </div>
           </div>
-          <img src={me} alt="" style={{ marginLeft: "10px", height: "80vh", width: "100%" }} />
+          <div className="col-md-6 order-1 order-md-2">
+            <img src={me} alt="" className="img-fluid" />
+          </div>
         </section>
         <ToastContainer />
       </div>

@@ -23,6 +23,7 @@
 .text-section {
   flex: 1;
   padding: 20px;
+  width: 100%;
 }
 
 .text-section {
@@ -37,7 +38,7 @@
 }
 
 .carousel-section .carousel-control-prev,
-.carousel-section .carousel-control-next{
+.carousel-section .carousel-control-next img{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -48,7 +49,7 @@
   cursor: pointer;
 }
 
-.carousel-section .carousel-control-prev {
+.carousel-section .carousel-control-prev img{
   left: 10px;
 }
 
@@ -58,18 +59,18 @@
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
   .home-container {
-    flex-direction: column; /* Change flex direction to display items vertically */
-    align-items: center; /* Center items vertically */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .text-section {
-    order: 1; /* Display text section above carousel */
-    margin-top: 20px; /* Add margin between text and carousel */
+    order: 1; 
+    margin-top: 20px; 
   }
 
   .carousel-section {
-    order: 2; /* Display carousel below text section */
-    margin-top: 20px; /* Add margin between text and carousel */
+    order: 2; 
+    margin-top: 20px; 
   }
 
   .carousel-section{
@@ -80,7 +81,7 @@
 
   .carousel-section img {
    width: 100% !important; 
-    height: 60vh; /* Maintain aspect ratio of images */
+    height: 60vh; 
     margin: 0;
     padding: 0;
   }

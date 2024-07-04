@@ -5,9 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-h2 span{
+
+h2 span {
   font-family: "Noto Serif Display", serif;
 }
+
 .text {
   background-image: url("../../Assets/img18.jpeg");
   margin-top: 20px;
@@ -17,7 +19,7 @@ h2 span{
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  opacity: 80%; 
+  opacity: 0.8; /* Changed opacity value */
   color: black;
   position: relative;
 }
@@ -28,161 +30,49 @@ h2 span{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-align: center; 
+  text-align: center;
+  padding: 0 20px; /* Added padding to improve readability */
 }
 
 .mydiv h2 {
   font-size: 40px;
+  margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .mydiv p {
-  font-size: 28px;
+  font-size: 24px; /* Adjusted font size for better readability */
+  line-height: 1.6; /* Improved line height for readability */
 }
 
-@media screen and (max-width: 768px) {
-  .text {
-    height: 70vh; 
-  }
-  
-  .mydiv {
-    width: 90%; 
-    top: 75%; 
-    transform: translate(-50%, -70%); 
-  }
-  
-  .mydiv h2 {
-    font-size: 30px; 
-  }
-  
-  .mydiv p {
-    font-size: 18px; 
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-} */
-
-
-
-/* Responsive styles */
-/* Note: Place larger screen media queries before smaller screen media queries */
-/* 
-@media (max-width: 1280px) {
-  .text {
-    height: 90vh; 
-    padding-top: 13vh; 
-  }
-
-  .mydiv {
-    width: 80%;
-    top: 55%; 
-    transform: translate(-50%, -55%);
-  }
-
-  .mydiv h2 {
-    font-size: 36px; 
-  }
-
-  .mydiv p {
-    font-size: 24px; 
-  }
-}
-
-@media (max-width: 1024px) {
-  .text {
-    height: 80vh; 
-    padding-top: 12vh;
-  }
-
-  .mydiv {
-    width: 85%;
-    top: 60%;
-    transform: translate(-50%, -60%);
-  }
-
-  .mydiv h2 {
-    font-size: 32px; 
-  }
-
-  .mydiv p {
-    font-size: 22px; 
-  }
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .text {
-    height: 70vh; 
-    padding-top: 10vh; 
-  }
-
   .mydiv {
-    width: 90%; 
-    top: 65%; 
-    transform: translate(-50%, -65%); 
+    width: 90%; /* Make the content narrower on smaller screens */
   }
 
   .mydiv h2 {
-    font-size: 30px; 
+    font-size: 32px; /* Reduce font size for smaller screens */
   }
 
   .mydiv p {
-    font-size: 18px; 
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+  
+}
+@media (max-width: 586px) {
+  .mydiv {
+    top: 50%;
+  }
+
+  .mydiv h2 {
+    font-size: 25px;
+    height: auto;
+  }
+
+  .mydiv p {
+    font-size: 18px;
+  }
+  .text{
+    height: 130vh;
   }
 }
-
-@media (max-width: 576px) {
-  .text {
-    height: 60vh; 
-    padding-top: 8vh; 
-  }
-
-  .mydiv {
-    width: 95%;
-    top: 70%;
-    transform: translate(-50%, -70%);
-  }
-
-  .mydiv h2 {
-    font-size: 26px; 
-  }
-
-  .mydiv p {
-    font-size: 16px; 
-  }
-}
-
-@media (max-width: 375px) {
-  .text {
-    height: 50vh; 
-    padding-top: 6vh;
-  }
-
-  .mydiv {
-    width: 100%;
-    top: 75%; 
-    transform: translate(-50%, -75%);
-  }
-
-  .mydiv h2 {
-    font-size: 22px; 
-  }
-
-  .mydiv p {
-    font-size: 14px; 
-  }
-} */

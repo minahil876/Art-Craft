@@ -3,7 +3,7 @@ import axios from "axios";
 import NavbarComponent from "../Navbar/Navbar";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",

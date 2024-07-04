@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Unav from './Unav';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
-import Uprofile from './Uprofile';
+// import Uprofile from './Uprofile';
 import './Uhome.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -32,7 +32,7 @@ class Team extends React.Component {
         <div className="row2">
           <div className="col-md-4 m-2 col-sm-6">
             <div className="box2">
-              <img src={imeg} alt="Minahil Iqbal" />
+              <img src={imeg} alt="Minahil Iqbal"/>
               <div className="box-content">
                 <h4 className="title" style={{ color: "white" }}>
                   Minahil Iqbal
