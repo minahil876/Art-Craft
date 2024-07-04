@@ -102,7 +102,7 @@ const Procard = ({ addItemFunction }) => {
                   <img src={item.product_picture} className="card-img-top" alt="Product" />
                   <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
                     <button className="btn btn-primary" onClick={() => addItemFunction(item)}>Add to cart</button>
                     <button className="btn btn-link" onClick={() => addFavorite(item)}>
                       <FontAwesomeIcon icon={faHeart} style={{ color: isFavorite ? "#A2C579" : "#016A70", fontSize: '30px' }} />

@@ -21,8 +21,8 @@ const [setFeedback] = useState({ total: 0, positive: 0, negative: 0 });
 
   // Sample data for feedback and messages
   useEffect(() => {
-    setFeedback({ total: 385749, positive: 355689, negative: 30060 });
-    setMessages({ read: 450, unread: 120 });
+    // setFeedback({ total: 385749, positive: 355689, negative: 30060 });
+    // setMessages({ read: 450, unread: 120 });
   }, [setFeedback, setMessages]);
 
   // const feedbackData = {
