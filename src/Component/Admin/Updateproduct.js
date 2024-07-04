@@ -5,7 +5,7 @@ const Updateproduct = () => {
   const navigate=useNavigate();
   const [product,setproduct]=useState([]);
   useEffect(()=>{
-axios.get('http://192.168.12.106:8000/crafters/products/').then((res)=>{
+axios.get('http://192.168.12.103:8002/crafters/products/').then((res)=>{
   console.log(res.data);
   setproduct(res.data)
 })

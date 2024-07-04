@@ -47,6 +47,7 @@ const DetailModal = ({ show, item, onClose }) => {
     </div>
   );
 };
+
 const GalleryPage = () => {
   const [data, setData] = useState([]);
   const [collection, setCollection] = useState([]);

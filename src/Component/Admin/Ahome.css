@@ -1,0 +1,146 @@
+.cards {
+    display: flex;
+    gap: 10%; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    width: 110%;
+  }
+  /* .card1:hover{
+    background-color: #A2C579;
+  } */
+  .card1{
+    background-color: #016A70;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+  }
+  .card1 h2{
+    color: white;
+    font-size: 22px;
+  }
+  .card-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .card-icon:hover{
+color: #D2DE32;
+  }
+.target {
+    background-color: #fff;
+    width: 108%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .target h3 {
+    margin-bottom: 10px;
+    color: #016A70;
+    font-size: 30px;
+    font-family: "Noto Serif Display", serif;
+  }
+  
+  .target p {
+    margin-bottom: 20px;
+    margin-left: 24px;
+    color: #666;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+  }
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s;
+    flex: 1;
+    text-align: left;
+  }
+  .chart-container {
+    width: 100px;
+    margin: 0 auto; /* Center align the charts if needed */
+  }
+
+  
+  .card-container {
+    display: flex;
+    /* flex-direction: col; */
+    align-items: center;
+  }
+  
+  /* .card:hover {
+    transform: translateY(-5px);
+  } */
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-value {
+    color: #016A70;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .progress-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  .order-progress {
+    width: 50%; 
+    /* background-color: #016A70; */
+  }
+  
+  .income-progress {
+    width: 60%;
+    /* background-color: #D2DE32; */
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (min-width: 768px) {
+    .cards {
+      flex-direction: row;
+    }
+  
+    .card {
+      margin: 0 10px;
+    }
+  
+    .card:first-child {
+      margin-left: 0;
+    }
+  
+    .card:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  

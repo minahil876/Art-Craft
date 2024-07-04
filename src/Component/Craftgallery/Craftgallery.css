@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: black;
     transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -76,7 +76,10 @@
     width: 2rem;
     height: 2rem;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
+    background-color: #016A70;
+    color: white;
     cursor: pointer;
+}
+.model.open svg:hover{
+    color: #D2DE32;
 }

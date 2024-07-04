@@ -10,7 +10,7 @@
 
 .admin-sidebar3 a, .logout-button {
   text-decoration: none;
-  color: #ffc107;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   display: flex;
@@ -25,17 +25,20 @@
 }
 
 .admin-sidebar3 a:hover, .logout-button:hover {
-  background-color: #495057;
+  background-color: #A2C579;
 }
-
 .admin-sidebar3 a svg, .logout-button svg {
   margin-right: 10px; 
 }
-
+.admin-sidebar3 a svg:hover{
+  color: #016A70;
+} 
+.logout-button:hover{
+  color: #016A70;
+}
 .admin-sidebar3{
-  background-color: #343a40;
+  background-color:#016A70 !important;
   padding: 20px;
-  color: #fff;
   /* height: 100%; */
   min-height: 400px;
 }
@@ -47,7 +50,7 @@
 
 .admin-sidebar3 a {
   text-decoration: none;
-  color: #ffc107;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   display: flex;
@@ -57,14 +60,14 @@
 }
 
 .admin-sidebar3 a:hover {
-  background-color: #495057;
+ color: #016A70;
 }
 
 .admin-content3 {
   background-color: #ffffff;
   padding: 20px;
   height: 100%;
-  /* min-height: 500px; */
+  /* min-height: 670px; */
 }
 
 .row3 {
@@ -75,7 +78,6 @@
 
 .side{
   width: 25%;
-  background-color: #343a40;
 }
 
 .col-lg-8 {

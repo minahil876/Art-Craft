@@ -5,3 +5,11 @@ body {
   background-color: white;
 }
 
+
+.toast-message {
+  background: #1e4f5c;
+  color: #fff;
+  font-size: 20px;
+  width: 34vw;
+  padding: 30px 20px;
+}

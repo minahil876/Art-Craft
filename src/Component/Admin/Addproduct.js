@@ -46,7 +46,7 @@ const AddProduct = () => {
     try {
       const response = await axios
         .post(
-          "http://192.168.12.106:8000/crafters/products/",
+          "http://192.168.12.103:8002/crafters/products/",
           formData
           // {
           //   headers: {
@@ -92,6 +92,7 @@ const AddProduct = () => {
     display: "block",
     marginBottom: "5px",
     fontWeight: "bold",
+    color: "black", // Added black color to the labels
   };
 
   const inputStyle = {

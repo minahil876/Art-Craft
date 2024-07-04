@@ -35,3 +35,6 @@
     margin: 0; /* Remove default margin */
     cursor: pointer;
 }
+.fonts:hover{
+color: #A2C579;
+}

@@ -171,13 +171,14 @@ span {
   transition: background 0.3s;
 }
 
-/* .custom-button:hover {
-  background: #D2DE32; 
-} */
+.custom-button:hover {
+  background: #A2C579; 
+}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .box1 {
+    height: 90vh;
     flex-basis: calc(50% - 30px); /* Two items per row with some margin between */
   }
 }

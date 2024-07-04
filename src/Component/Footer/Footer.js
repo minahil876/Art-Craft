@@ -40,7 +40,7 @@ const Footer = () => {
 </div>
 
                     <div className="col-lg-3 col-md-6">
-                        <h5 className="mb-4 d-flex" style={{marginLeft: '10px',color: '#016A70', fontFamily: '"Noto Serif Display", serif', fontSize: '25px'}}>
+                        <h5 className="mb-4 d-flex" style={{marginLeft: '10px',color: '#016A70', fontFamily: '"Noto Serif Display", serif', fontSize: '25px',}}>
                         Photo Gallery</h5>
                         <div className="row g-2 pt-2">
                             <div className="col-4">

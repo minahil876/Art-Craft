@@ -9,7 +9,7 @@ const Vorder = () => {
     const user_id = data.id;
 
     useEffect(() => {
-        axios.get('http://192.168.12.106:8000/crafters/checkout/', {
+        axios.get('http://192.168.12.103:8002/crafters/checkout/', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -28,11 +28,15 @@ const Vorder = () => {
                 <table className="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Item Name</th>
+                            <th>Serial No</th>
+                            <th>Product Name</th>
+                            <th>User Name</th>
                             <th>Quantity</th>
                             <th>Price</th>
-                            <th>Total</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                            <th>date</th>
+                            {/* <th>Action</th> */}
                         </tr>
                     </thead>
                     <tbody>
@@ -40,9 +44,13 @@ const Vorder = () => {
                             <tr key={ind}>
                                 <td>{ind + 1}</td>
                                 <td>{item.product_name}</td>
+                                <td>{data.username}</td>
                                 <td>{item.quantity}</td>
                                 <td>{item.price}</td>
                                 <td>{item.price * item.quantity}</td>
+                                <td>{item.status}</td>
+                                <td>{item.date}</td>
+                                 
                             </tr>
                         ))}
                     </tbody>

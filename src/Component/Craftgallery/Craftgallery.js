@@ -48,8 +48,8 @@ const Craftgallery = () => {
       {/* <NavbarComponent/> */}
       <div>
         <div className={model ? "model open" : "model"}>
-          <img src={tempimgSrc} alt="model" />
-          <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)} />
+          <img src={tempimgSrc} alt="model"style={{marginTop: '10%', height: '83vh', width: '47%'}}/>
+          <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)} style={{top: '20%'}}/>
         </div>
         <div className="gallery">
           {data.map((item, index) => {

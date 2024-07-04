@@ -101,7 +101,12 @@ h1 span{
 }
 
 @media only screen and (max-width:990px){
-    .box2{ margin-bottom: 30px; }
+    .box2{ 
+      margin-bottom: 30px; }
+}
+.box2 img{ 
+height: 90vh !important;
+width: 100%;
 }
 .box-content {
     position: relative; 

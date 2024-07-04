@@ -20,7 +20,7 @@ const Blog = () => {
               <img src={me} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Eid Basket</h2>
+                  <h2>Eid Box</h2>
                 </ul>
                 <div class="box-profile">
                   <NavLink to="/slick" style={{ color: "#016A70" }}>
@@ -45,12 +45,12 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          {/* <div class="col-md-4 col-sm-6">
             <div class="box">
               <img src={me2} alt="" />
               <div class="box-content">
                 <ul class="icon">
-                  <h2>Birthday Box</h2>
+                  <h2>Eid Box</h2>
                 </ul>
                 <div class="box-profile">
                   <NavLink to="/slick" style={{ color: "#016A70" }}>
@@ -59,12 +59,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row" style={{ marginTop: "30px" }}>
-          <div class="col-md-4 col-sm-6">
+          </div> */} <div class="col-md-4 col-sm-6">
             <div class="box">
               <img src={me3} alt="" />
               <div class="box-content">
@@ -79,12 +74,32 @@ const Blog = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" style={{ marginTop: "30px" }}>
+        
           <div class="col-md-4 col-sm-6">
             <div class="box">
               <img src={me4} alt="" />
               <div class="box-content">
                 <ul class="icon">
                   <h2>Pink Rose Bouquet</h2>
+                </ul>
+                <div class="box-profile">
+                  <NavLink to="/slick" style={{ color: "#016A70" }}>
+                    Read More
+                  </NavLink>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="box">
+              <img src={me2} alt="" />
+              <div class="box-content">
+                <ul class="icon">
+                  <h2>Eid Box</h2>
                 </ul>
                 <div class="box-profile">
                   <NavLink to="/slick" style={{ color: "#016A70" }}>

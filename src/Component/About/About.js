@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import "./About.css";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import ime from "../../Assets/communicate.png";
 import ime1 from "../../Assets/designs.png";
 import ime2 from "../../Assets/custom.png";
@@ -50,10 +51,8 @@ function About() {
               <span style={{ color: "#016A70" }}> CREATION</span>
             </h1>
             <p style={{ fontSize: "22px" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-              vehicula velit. Fusce venenatis, enim sit amet sollicitudin
-              pretium, metus odio luctus ipsum, nec varius leo purus id elit.
-              Integer non nisi at purus accumsan eleifend.
+            Unveil the magic of handmade gifts that embody elegance and creativity. Each piece is thoughtfully crafted to capture the essence of love and appreciation, making your presents truly unforgettable. Our artisans pour their heart and soul into every creation, ensuring that your gifts are as unique and special as your loved ones.
+
               
             </p>
           </div>
@@ -80,12 +79,10 @@ function About() {
               <span style={{ color: "#016A70" }}>Communication</span>
             </h3>
             <p style={{ textAlign: "justify" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              aliquam nisi ut velit posuere, in aliquam justo congue. Donec
-              finibus, sem ut vehicula pretium, elit nisi accumsan risus, vitae
-              finibus justo mi id elit
+            Effective communication is the cornerstone of any successful relationship, whether personal or professional. It fosters understanding, builds trust, and resolves conflicts, paving the way for collaboration and growth.
+
             </p>
-            <button class="custom-button">See more</button>
+            <button class="custom-button"><NavLink to="/contact" style={{border: 'none',textDecoration: 'none', color: 'white'}}>See more</NavLink></button>
           </div>
           <div class="col-md-4 box1">
             <img src={ime1} alt="" class="img-fluid" />
@@ -93,12 +90,10 @@ function About() {
               <span style={{ color: "#016A70" }}>Inspired Design</span>
             </h3>
             <p style={{ textAlign: "justify" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              aliquam nisi ut velit posuere, in aliquam justo congue. Donec
-              finibus, sem ut vehicula pretium, elit nisi accumsan risus, vitae
-              finibus justo mi id elit
+            Our designs are inspired by the beauty and elegance of nature, blending creativity with functionality. Each piece is crafted with meticulous attention to detail, ensuring a perfect harmony of aesthetics and purpose.
+
             </p>
-            <button class="custom-button">See more</button>
+            <button class="custom-button"><NavLink to="/gallery" style={{border: 'none',textDecoration: 'none', color: 'white'}}>See more</NavLink></button>
           </div>
           <div class="col-md-4 box1">
             <img src={ime2} alt="" class="img-fluid" />
@@ -106,14 +101,9 @@ function About() {
               <span style={{ color: "#016A70" }}>Custom Craft Orders</span>
             </h3>
             <p style={{ textAlign: "justify", marginTop: "30px" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              aliquam nisi ut velit posuere, in aliquam justo congue. Donec
-              finibus, sem ut vehicula pretium, elit nisi accumsan risus, vitae
-              finibus justo mi id elit
+            Our custom craft orders allow you to personalize every detail to your liking. Whether you have a specific design in mind or need guidance to bring your vision to life, we are here to help. From unique gifts to special event decor.
             </p>
-            <button class="custom-button" style={{ marginTop: "5px" }}>
-              See more
-            </button>
+            <button class="custom-button"><NavLink to="/product" style={{border: 'none',textDecoration: 'none', color: 'white'}} className='mt-5'>See more</NavLink></button>
           </div>
         </div>
 

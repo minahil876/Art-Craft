@@ -3,14 +3,14 @@ import axios from 'axios';
 const Removeproduct = () => {
   const [product,setproduct]=useState([]);
   useEffect(()=>{
-axios.get('http://192.168.12.106:8000/crafters/products/').then((res)=>{
+axios.get('http://192.168.12.103:8002/crafters/products/').then((res)=>{
   console.log(res.data);
   setproduct(res.data)
 })
   },[])
 
   const del=(id)=>{
- axios.delete(`http://192.168.12.106:8000/crafters/products/${id}/`).then((res)=>{
+ axios.delete(`http://192.168.12.103:8002/crafters/products/${id}/`).then((res)=>{
   alert("Product Deleted Successfuly")
   window.location.reload();
  })

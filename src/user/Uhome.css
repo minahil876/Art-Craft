@@ -1,0 +1,72 @@
+/* General container and layout styling */
+/* .container-fluid {
+    padding: 20px;
+  } */
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Image styling */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    transition: all 1.5s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.12);
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Specific card colors */
+  .card.bg-primary, .card.bg-success, .card.bg-info {
+    background-color: #016A70 !important;
+  }
+  .btn-light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .col-md-3, .col-md-8, .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  

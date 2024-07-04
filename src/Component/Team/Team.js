@@ -24,9 +24,7 @@ class Team extends React.Component {
               marginBottom: "20px",
             }}
           >
-            <span style={{ color: "#016A70" }}>Meet</span>
-            <span style={{ color: "#D2DE32" }}>Our</span>
-            <span style={{ color: "#016A70" }}>Team</span>
+            <span style={{ color: "#016A70" }}>Meet</span> <span style={{ color: "#D2DE32" }}>Our</span> <span style={{ color: "#016A70" }}>Team</span>
             <span style={{ color: "#D2DE32" }}> Members</span>
           </h1>
         </div>

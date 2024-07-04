@@ -2,28 +2,33 @@ import React from 'react';
 import '../Component/Admin/Admin.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus,faMoneyCheckAlt, faUser, faShoppingCart, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHome ,faMoneyCheckAlt, faUser, faShoppingCart, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Unav = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate('/login'); 
+    sessionStorage.removeItem('ulogin')
+    sessionStorage.removeItem('token')
+    navigate('/signin'); 
   };
 
   return (
     <div className="">
       <div className="">
-        <div className="side col-lg-4 admin-sidebar3 w-50">
+        <div className="side col-lg-4 admin-sidebar3 " style={{width: '80%', marginTop: '100px'}}>
           <div>
-            <NavLink to="removeproduct">
+          <NavLink to="/uhome">
+              <FontAwesomeIcon icon={faHome } /> Home
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/uprofile">
               <FontAwesomeIcon icon={faUser} /> Profile
             </NavLink>
           </div>
           <div>
-            <NavLink to="/uproduct">
-              <FontAwesomeIcon icon={faPlus} /> Products
-            </NavLink>
+        
           </div>
           <div>
             <NavLink to="/cart">
@@ -33,6 +38,11 @@ const Unav = () => {
           <div>
             <NavLink to="/uorder">
               <FontAwesomeIcon icon={faMoneyCheckAlt} /> Order
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/favourite">
+              <FontAwesomeIcon icon={faMoneyCheckAlt} /> Favourites
             </NavLink>
           </div>
           <div>

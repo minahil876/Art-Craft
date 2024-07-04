@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { FaUserCircle } from "react-icons/fa"; 
 
 const NavbarComponent = () => {
+  const navigate=useNavigate();
   const [expanded, setExpanded] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
+  const ulogin = JSON.parse(sessionStorage.getItem("ulogin"));
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -26,6 +29,16 @@ const NavbarComponent = () => {
     };
   }, []);
 
+  const checkit=()=>{
+ navigate('/uhome')
+  }
+ 
+  const handleLogout = () => {
+    sessionStorage.removeItem('ulogin')
+    sessionStorage.removeItem('token')
+    navigate('/signin'); 
+  };
+
   return (
     <div
       className={`navi ${
@@ -35,14 +48,14 @@ const NavbarComponent = () => {
       <Navbar expanded={expanded} expand="lg" className="custom-navbar">
         <Container>
           <Navbar.Brand href="#home" style={{ fontSize: "2rem" }}>
-            <span style={{ color: "white" }}>Craft Gallery</span>
+            <span style={{ color: "white" }}>𝑪𝒓𝒂𝒇𝒕 𝑮𝒂𝒍𝒍𝒆𝒓𝒚</span>
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(!expanded)}
             aria-controls="responsive-navbar-nav"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto" style={{ fontSize: "1.3rem" }}>
+            <Nav className="item ms-auto" style={{ fontSize: "1.3rem" }}>
               <Nav.Link
                 as={NavLink}
                 to="/"
@@ -91,22 +104,40 @@ const NavbarComponent = () => {
               >
                 Contact Us
               </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/signin"
-                activeClassName="active"
-                className="nav-link"
-              >
-                Sign In
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/signup"
-                activeClassName="active"
-                className="nav-link"
-              >
-                Sign Up
-              </Nav.Link>
+              
+              {ulogin ? (
+                
+                <NavDropdown
+              title={
+                <span>
+                  <img src={ulogin.profile_photo_url} width="46px" height="46px" alt="Profile" className=" user" style={{borderRadius:"50%"}}  />  {ulogin.username}
+                </span>
+              }
+              id="basic-nav-dropdown" className="nav-link" >
+              <NavDropdown.Item className="custom-dropdown-item" onClick={() => checkit()}>Profile</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item className="custom-dropdown-item" onClick={handleLogout}>Logout</NavDropdown.Item>
+            </NavDropdown>
+              ) : (
+                <>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/signin"
+                    activeClassName="active"
+                    className="nav-link me-4"
+                  >
+                    Sign In
+                  </Nav.Link>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/signup"
+                    activeClassName="active"
+                    className="nav-link"
+                  >
+                    Sign Up
+                  </Nav.Link>
+                </>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
